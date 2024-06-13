@@ -3,7 +3,7 @@ library ieee;
 
 entity Counter is
   generic (
-    N : natural := 8
+    N : natural := 16
   );
   port (
     clk       : in  std_logic;
@@ -32,7 +32,7 @@ architecture struct of Counter is
   --------------------------------------------------------------
 
   component DFF_N is
-    generic( N : natural := 8);
+    generic( N : natural := 16);
 
     port(
       clk     : in std_logic;
@@ -44,7 +44,7 @@ architecture struct of Counter is
   end component;
 
   component ripple_carry_adder is
-    generic (Nbit : integer := 8);
+    generic (Nbit : integer := 16);
 
     port (
       a    : in std_logic_vector(Nbit - 1 downto 0);
