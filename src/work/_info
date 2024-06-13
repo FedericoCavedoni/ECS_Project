@@ -1,0 +1,186 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Eask_modulator
+Z0 w1718203290
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 11
+Z4 dC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src
+Z5 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd
+Z6 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd
+l0
+L5 1
+V=7Ei@880h7IX:IETn;jOW1
+!s100 bjecOVYK^K1im8;fmSXGN0
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1718210402
+!i10b 1
+Z9 !s108 1718210402.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd|
+Z11 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 13 ask_modulator 0 22 =7Ei@880h7IX:IETn;jOW1
+!i122 11
+l44
+L23 44
+V5B_J]kzE@I@lm[<M5>W^21
+!s100 ca400CQ:;9edSmaiG76Fc0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efsk_modulator
+Z14 w1718203301
+R1
+R2
+R3
+!i122 12
+R4
+Z15 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd
+Z16 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd
+l0
+L5 1
+VUk4lEn]4VVnKeJR_@cK?D1
+!s100 zl45VdGa3g4;MOhgnUXhO0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd|
+Z18 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 13 fsk_modulator 0 22 Uk4lEn]4VVnKeJR_@cK?D1
+!i122 12
+l45
+L23 47
+Vm<5NRB?ZeQnE97X_14[9A3
+!s100 JHjoNIdz[LHg<]>1;?^G>1
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Emulti_standard_modulator
+w1718208473
+R1
+R2
+R3
+!i122 10
+R4
+8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/multi_standard_modulator.vhd
+FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/multi_standard_modulator.vhd
+l0
+L5 1
+Va`Do@^^8@o>[?7n0WS8[82
+!s100 A]0_7cz59P_o5o22;odUJ1
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/multi_standard_modulator.vhd|
+!s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/multi_standard_modulator.vhd|
+!i113 1
+R12
+R13
+Enco
+Z19 w1718203516
+R1
+R2
+R3
+!i122 14
+R4
+Z20 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd
+Z21 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd
+l0
+L5 1
+Vb@mJLOd6[hk`]:a4K3<PC0
+!s100 Hd9Je@7e9f=Jo?L9XCQJ=0
+R7
+32
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd|
+Z23 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 nco 0 22 b@mJLOd6[hk`]:a4K3<PC0
+!i122 14
+l73
+L22 66
+VB[47AM=?0iD@@UXOW=@`O3
+!s100 zH`:RU]ll;odd3XNKcWek2
+R7
+32
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Epsk_modulator
+w1718210396
+R1
+R2
+R3
+!i122 15
+R4
+8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd
+FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd
+l0
+L5 1
+VofB8[7LEKz[D:M:Q<kB`M1
+!s100 CcTB7JGY@]`cb]eTZ86[A2
+R7
+32
+!s110 1718210472
+!i10b 1
+!s108 1718210472.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd|
+!s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd|
+!i113 1
+R12
+R13
