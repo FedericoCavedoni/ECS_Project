@@ -2,12 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-------------------------------------------------------------------------
--- TODO
--- Scrivere testbench
--- Valutare sincrono/Asincrono
-------------------------------------------------------------------------
-
 entity Multi_Standard_Modulator is
     generic (
         N   : integer := 16;  -- Dimensione della frequenza e della fase in ingresso
