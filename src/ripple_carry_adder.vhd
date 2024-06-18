@@ -3,29 +3,29 @@ library ieee;
 
 entity ripple_carry_adder is
   generic (
-    Nbit : positive := 8
+    N : positive := 8
   );
   port (
-    a    : in  std_logic_vector(Nbit - 1 downto 0);
-    b    : in  std_logic_vector(Nbit - 1 downto 0);
+    a    : in  std_logic_vector(N - 1 downto 0);
+    b    : in  std_logic_vector(N - 1 downto 0);
     cin  : in  std_logic;
-    s    : out std_logic_vector(Nbit - 1 downto 0);
+    s    : out std_logic_vector(N - 1 downto 0);
     cout : out std_logic
   );
-end entity;
+end ripple_carry_adder;
 
-architecture beh of ripple_carry_adder is
+architecture behavior of ripple_carry_adder is
 begin
 
   comb_process: process(a, b, cin)
     variable c : std_logic;
   begin
     c := cin;
-    for i in 0 to Nbit - 1 loop
+    for i in 0 to N - 1 loop
       s(i) <= a(i) xor b(i) xor c;
       c    := (a(i) and b(i)) or (a(i) and c) or (b(i) and c);
     end loop;
 	cout <= c;
   end process;
 
-end beh;
+end behavior;

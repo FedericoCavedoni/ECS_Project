@@ -7,9 +7,9 @@ entity ddfs_lut_65536_16bit is
     address  : in  std_logic_vector(15 downto 0);
     ddfs_out : out std_logic_vector(15 downto 0)
   );
-end entity;
+end ddfs_lut_65536_16bit;
 
-architecture rtl of ddfs_lut_65536_16bit is
+architecture behavior of ddfs_lut_65536_16bit is
 
   type LUT_t is array (natural range 0 to 65535) of integer;
   constant LUT: LUT_t := (
@@ -65553,4 +65553,4 @@ architecture rtl of ddfs_lut_65536_16bit is
 
 begin
   ddfs_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),16));
-end architecture;
+end behavior;

@@ -13,9 +13,9 @@ entity Counter is
     cntr_out  : out std_logic_vector(N - 1 downto 0)
   );
 
-end entity;
+end Counter;
 
-architecture struct of Counter is
+architecture behavior of Counter is
   --------------------------------------------------------------
   -- Signals declaration
   --------------------------------------------------------------
@@ -80,4 +80,4 @@ begin
   -- Connect the output
   cntr_out <= q_h;
 
-end architecture;
+end behavior;

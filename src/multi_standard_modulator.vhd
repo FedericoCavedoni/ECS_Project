@@ -18,7 +18,6 @@ entity Multi_Standard_Modulator is
     port (
         clk            : in  std_logic;
         reset          : in  std_logic;
-
         frequency      : in  std_logic_vector(N-1 downto 0);
         phase          : in  std_logic_vector(N-1 downto 0);
         amplitude      : in  std_logic_vector(A-1 downto 0);
@@ -26,12 +25,10 @@ entity Multi_Standard_Modulator is
     );
 end Multi_Standard_Modulator;
 
-architecture struct of Multi_Standard_Modulator is
-    -- Segnale interno per la frequency word calcolata
-    signal frequency_word : std_logic_vector(N-1 downto 0);
-    
+architecture behavior of Multi_Standard_Modulator is
+
     -- Segnale interno per l'uscita del contatore
-    signal counter_out : std_logic_vector(N-1 downto 0);
+    signal counter_output : std_logic_vector(N-1 downto 0);
     
     -- Segnale interno per l'uscita dell'adder
     signal adder_output : std_logic_vector(N-1 downto 0);
@@ -46,15 +43,9 @@ architecture struct of Multi_Standard_Modulator is
     signal output_reg : std_logic_vector(O-1 downto 0);
 
     -- Dichiarazione delle componenti
-    component FrequencyWordCalculator is
-        Port (
-            freq_in   : in  std_logic_vector(N-1 downto 0);
-            freq_word : out std_logic_vector(N-1 downto 0)
-        );
-    end component;
 
     component Counter is
-        generic (N : natural := N);
+        generic (N : integer := N);
         Port (
             clk     : in  std_logic;
             a_rst_h : in  std_logic;
@@ -66,15 +57,12 @@ architecture struct of Multi_Standard_Modulator is
     end component;
 
     component Ripple_Carry_Adder is
-        generic (Nbit : integer := N);
+        generic (N : integer := N);
         Port (
-            clk     : in  std_logic;
-            a_rst_h : in  std_logic;
-
-            a       : in  std_logic_vector(Nbit - 1 downto 0);
-            b       : in  std_logic_vector(Nbit - 1 downto 0);
+            a       : in  std_logic_vector(N - 1 downto 0);
+            b       : in  std_logic_vector(N - 1 downto 0);
             cin     : in  std_logic;
-            s       : out std_logic_vector(Nbit - 1 downto 0);
+            s       : out std_logic_vector(N - 1 downto 0);
             cout    : out std_logic
         );
     end component;
@@ -86,17 +74,22 @@ architecture struct of Multi_Standard_Modulator is
         );
     end component;
 
-    -- Non dichiarare Multiplier nuovamente se è già dichiarato altrove nel codice
+    component multiplier_7x4_16 is
+            generic (
+                N1   : integer := P;
+                N2  : integer := A;
+                O   : integer := O;
+            );
+            Port (
+                A : in STD_LOGIC_VECTOR (N1-1 downto 0);  
+                B : in STD_LOGIC_VECTOR (N2-1 downto 0); 
+                P : out STD_LOGIC_VECTOR (O-1 downto 0) 
+            );
+
+    end component;
+
 
 begin
-    -- Resto del codice del tuo design ...
-
-    FWCALCULATOR: FrequencyWordCalculator 
-        generic map (N => N)
-        port map (
-            freq_in   => frequency,
-            freq_word => frequency_word
-        );
 
     PHASE_ACCUMULATOR: Counter
         generic map (N => N)
@@ -104,16 +97,16 @@ begin
             clk       => clk,
             a_rst_h   => reset,
             en        => '1',
-            increment => frequency_word,
-            cntr_out  => counter_out
+            increment => frequency,
+            cntr_out  => counter_output
         );
 
     ADDER: Ripple_Carry_Adder
-        generic map (Nbit => N)
+        generic map (N => N)
         port map (
             clk     => clk,
             a_rst_h => reset,
-            a       => counter_out,
+            a       => counter_output,
             b       => phase,
             cin     => '0',
             s       => adder_output,
@@ -126,21 +119,16 @@ begin
             ddfs_out => lut_output
         );
 
-    -- Assicurati di non dichiarare Multiplier nuovamente qui se è già dichiarato altrove
 
-    -- Resto del codice ...
-
-    MULTIPLIER: entity work.Multiplier(struct)
+    MULTIPLIER: multiplier_7x4_16
         generic map (N1 => P, N2 => A, O => O)
         port map (
-            clk => clk,
-            rst => reset,
             A   => lut_output,
             B   => amplitude,
             P   => multiplier_output
         );
 
-    DDFS_OUTPUT_REG: process(clk, reset)
+    MSM_OUTPUT_REG: process(clk, reset)
     begin
         if (reset = '1') then
             output_reg <= (others => '0');
@@ -151,4 +139,4 @@ begin
 
     yq <= output_reg;
 
-end struct;
+end behavior;
