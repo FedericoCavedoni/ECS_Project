@@ -1,6 +1,6 @@
 library ieee;
-  use ieee.std_logic_1164.all;
-  use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity MSM_tb is
 end MSM_tb;
@@ -41,7 +41,7 @@ architecture testbench of MSM_tb is
   constant MSM_cycles : integer := 4096;
 
   -- Maximum sine period
-  constant T_max_period : time := DDFS_cycles * T_clk;
+  constant T_max_period : time := MSM_cycles * T_clk;
 
   -----------------------------------------------------------------------------------------------------
   -- signals declaration
@@ -62,7 +62,7 @@ architecture testbench of MSM_tb is
   -- input amplitude
   signal amplitude_tb : std_logic_vector(A-1 downto 0) := (others => '0');
 
-  -- output signals (the declaration is useful to make it visible without observing the ddfs component)
+  -- output signals
   signal msm_out_tb : std_logic_vector(O-1 downto 0);
 
   -- Set to '0' to stop the simulation
@@ -73,7 +73,7 @@ begin
   -- clk signal
   clk_tb <= (not(clk_tb) and run_simulation) after T_clk / 2;
 
-  DUT: MSM
+  DUT: Multi_Standard_Modulator
     generic map (
         N => 16,
         A => 4,
@@ -86,7 +86,7 @@ begin
     frequency => fw_tb,
     phase     => phase_tb,
     amplitude => amplitude_tb,
-    yq => ddfs_out_tb
+    yq => msm_out_tb
   );
 
   -- process used to make the testbench signals change synchronously with the rising edge of the clock
@@ -97,29 +97,39 @@ begin
       case (clock_cycle) is
         when 1 =>
           reset_tb <= '0';
-          fw_tb    <= (11 downto 1 => '0') & '1'; -- frequency word = 1
+          fw_tb    <= (N-1 downto 1 => '0') & '1'; -- frequency word = 1
+          phase_tb <= (N-1 downto 1 => '0') & '1'; -- phase = 1
+          amplitude_tb <= "0001"; -- amplitude = 1
 
-        when DDFS_cycles *  4 => fw_tb <= (11 downto 2 => '0') & "10"; -- frequency word = 2
-                                       -- (1 => '1', others => '0')
+        when MSM_cycles * 4 => 
+          fw_tb <= (N-1 downto 2 => '0') & "10"; -- frequency word = 2
+          phase_tb <= (N-1 downto 2 => '0') & "10"; -- phase = 2
+          amplitude_tb <= "0010"; -- amplitude = 2
 
-        when DDFS_cycles *  6 => reset_tb <= '1';
+        when MSM_cycles * 6 =>
+          reset_tb <= '1';
 
-        when DDFS_cycles *  7 => reset_tb <= '0';
+        when MSM_cycles * 7 =>
+          reset_tb <= '0';
 
-        when DDFS_cycles *  8 => fw_tb <= (11 downto 3 => '0') & "100"; -- frequency word = 4
-                                       -- (2 => '1', others => '0')
+        when MSM_cycles * 8 => 
+          fw_tb <= (N-1 downto 3 => '0') & "100"; -- frequency word = 4
+          phase_tb <= (N-1 downto 3 => '0') & "100"; -- phase = 4
+          amplitude_tb <= "0100"; -- amplitude = 4
 
-        when DDFS_cycles *  9 => fw_tb <= (11 downto 4 => '0') & "1000"; -- frequency word = 8
-                                       -- (3 => '1', others => '0')
+        when MSM_cycles * 9 => 
+          fw_tb <= (N-1 downto 4 => '0') & "1000"; -- frequency word = 8
+          phase_tb <= (N-1 downto 4 => '0') & "1000"; -- phase = 8
+          amplitude_tb <= "1000"; -- amplitude = 8
 
-        when DDFS_cycles * 10 => run_simulation <= '0';
+        when MSM_cycles * 10 =>
+          run_simulation <= '0';
 
         when others => null;  -- Specifying that nothing happens in the other cases
 
       end case;
 
-      -- the variable is updated exactly here
-      --   -> try to move this statement before "case (clock_cycle) is" and watch the difference in the simulation
+      -- Increment the clock cycle counter
       clock_cycle := clock_cycle + 1;
     end if;
   end process;
