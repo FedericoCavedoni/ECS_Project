@@ -9,497 +9,278 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA/20.1
-Eask_modulator
-Z0 w1718203290
-Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 11
-Z4 dC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src
-Z5 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd
-Z6 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd
-l0
-L5 1
-V=7Ei@880h7IX:IETn;jOW1
-!s100 bjecOVYK^K1im8;fmSXGN0
-Z7 OV;C;2020.1;71
-32
-Z8 !s110 1718210402
-!i10b 1
-Z9 !s108 1718210402.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd|
-Z11 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/ask_modulator.vhd|
-!i113 1
-Z12 o-work work -2002 -explicit
-Z13 tExplicit 1 CvgOpt 0
-Abehavioral
-R1
-R2
-R3
-DEx4 work 13 ask_modulator 0 22 =7Ei@880h7IX:IETn;jOW1
-!i122 11
-l44
-L23 44
-V5B_J]kzE@I@lm[<M5>W^21
-!s100 ca400CQ:;9edSmaiG76Fc0
-R7
-32
-R8
-!i10b 1
-R9
-R10
-R11
-!i113 1
-R12
-R13
 Ecounter
-Z14 w1718305902
-R2
-R3
-!i122 25
-Z15 dC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src
-Z16 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd
-Z17 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd
+Z0 w1718706318
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+Z3 dC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src
+Z4 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd
+Z5 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd
 l0
 L4 1
-VLBcG1WnE`_LX5OLK;c3[`3
-!s100 eF_n160nm;VHA6I`z:JkU1
-R7
+VOl;fZaEeK3W@@nmAn`WaK1
+!s100 QaZ=6Y<:;oHL`=>hI7;[N1
+Z6 OV;C;2020.1;71
 32
-Z18 !s110 1718381663
+Z7 !s110 1718877508
 !i10b 1
-Z19 !s108 1718381663.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd|
-Z21 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd|
+Z8 !s108 1718877508.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd|
+Z10 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/counter.vhd|
 !i113 1
-R12
-R13
-Astruct
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R1
 R2
-R3
-DEx4 work 7 counter 0 22 LBcG1WnE`_LX5OLK;c3[`3
-!i122 25
+DEx4 work 7 counter 0 22 Ol;fZaEeK3W@@nmAn`WaK1
+!i122 12
 l58
 L18 66
-VQdbX_o2>>j3=::L=RfYVB0
-!s100 c?nK811YEIcZYn<T0_[B40
-R7
+VTMN=LD4S5cn762:G<^[d00
+!s100 ZK1WLF@6jSH9CD7C5QMi60
+R6
 32
-R18
+R7
 !i10b 1
-R19
-R20
-R21
+R8
+R9
+R10
 !i113 1
+R11
 R12
-R13
 Eddfs_lut_65536_16bit
-Z22 w1718373594
+Z13 w1718706366
+Z14 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
+!i122 13
 R3
-!i122 26
-R15
-Z23 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd
-Z24 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd
+Z15 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd
+Z16 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd
 l0
 L5 1
-Vf1><zbOmTN]P@=UBV_mVB2
-!s100 :]UAadH^1F3fDdGXW[EGC0
-R7
+Vf6cYeoMWlUCR_k0KL^67G2
+!s100 M]R7kaLRTXHUiG28?ZYNa2
+R6
 32
-R18
+R7
 !i10b 1
-R19
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd|
-Z26 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd|
+R8
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd|
+Z18 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ddfs_lut_65536_16bit.vhd|
 !i113 1
+R11
 R12
-R13
-Artl
+Abehavior
+R14
 R1
 R2
-R3
-DEx4 work 20 ddfs_lut_65536_16bit 0 22 f1><zbOmTN]P@=UBV_mVB2
-!i122 26
+DEx4 work 20 ddfs_lut_65536_16bit 0 22 f6cYeoMWlUCR_k0KL^67G2
+!i122 13
 l65554
 L12 65545
-VO][kmLi1hPcE_Q8JN6XJ=2
-!s100 5m:AcloYPP]T=f7mEZ?>H0
-R7
+Vf9do_6VF]a@HcZZ`_8@BF2
+!s100 `][aXa^j[<NCEU23aoPaU2
+R6
 32
-Z27 !s110 1718381671
+Z19 !s110 1718877545
 !i10b 1
-R19
-R25
-R26
+R8
+R17
+R18
 !i113 1
+R11
 R12
-R13
 Edff_n
-Z28 w1718097817
+Z20 w1718608055
+R1
 R2
+!i122 14
 R3
-!i122 27
-R15
-Z29 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd
-Z30 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd
+Z21 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd
+Z22 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd
 l0
 L4 1
 VbgdlQGDOf>Dh;Mi=@Z>An0
 !s100 eO@zFk`QPn4?5DQhFO[2k0
-R7
+R6
 32
-R27
+R19
 !i10b 1
-Z31 !s108 1718381671.000000
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
-Z33 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
+Z23 !s108 1718877545.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
+Z25 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
 !i113 1
+R11
 R12
-R13
 Astruct
+R1
 R2
-R3
 DEx4 work 5 dff_n 0 22 bgdlQGDOf>Dh;Mi=@Z>An0
-!i122 27
+!i122 14
 l18
 L17 14
 V87`d_DOLL]5<aF[>28e5L1
 !s100 75do]WfmEi:P=Vl<bMoYM2
-R7
+R6
 32
-R27
+R19
 !i10b 1
-R31
-R32
-R33
+R23
+R24
+R25
 !i113 1
+R11
 R12
-R13
-Efrequencywordcalculator
-Z34 w1718381658
+Emsm_tb
+w1718707380
+R14
 R1
 R2
+!i122 0
 R3
-!i122 28
-R15
-Z35 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/frequency_word_calculator.vhd
-Z36 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/frequency_word_calculator.vhd
+8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd
+FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd
 l0
 L5 1
-V_5XAmFC>0>9949`b:^@FH1
-!s100 ]n=HRbe2=D2z`?6YIn^>O0
-R7
+V1PM4E4maVojbmYkSegMeO2
+!s100 hDGf^>bingoazlT<LXV4J1
+R6
 32
-R27
+!s110 1718876817
 !i10b 1
-R31
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/frequency_word_calculator.vhd|
-Z38 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/frequency_word_calculator.vhd|
+!s108 1718876817.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd|
+!s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd|
 !i113 1
+R11
 R12
-R13
-Abehavioral
+Emulti_standard_modulator
+Z26 w1718877987
+R14
 R1
 R2
+!i122 21
 R3
-DEx4 work 23 frequencywordcalculator 0 22 _5XAmFC>0>9949`b:^@FH1
-!i122 28
-l19
-L15 11
-VPlXe`^eHH6d1_mFNjjUTY1
-!s100 J8I?ebPOHXHRi9dQ82A3;3
-R7
+Z27 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd
+Z28 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd
+l0
+L5 1
+V1?QC>:mNFJoz5oa6ObXAD2
+!s100 @IjZ@dmoD1CFgKIMNF[VF3
+R6
 32
-R27
+Z29 !s110 1718877996
 !i10b 1
+Z30 !s108 1718877996.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd|
+!s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R1
+R2
+DEx4 work 24 multi_standard_modulator 0 22 1?QC>:mNFJoz5oa6ObXAD2
+!i122 21
+l86
+L22 113
+VIMcBb]=aaQE]WCf=2I?:R1
+!s100 e4EXboZfXh78=7@^hcOZ:1
+R6
+32
+R29
+!i10b 1
+R30
 R31
+Z32 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd|
+!i113 1
+R11
+R12
+Emultiplier_7x4_16
+Z33 w1718706025
+R14
+R1
+R2
+!i122 16
+R3
+Z34 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_7x4_16.vhd
+Z35 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_7x4_16.vhd
+l0
+L5 1
+Vk6=HcLlVH3W?PYiEoGzN;1
+!s100 0ZkO83BhGnX4lml9OVeUe2
+R6
+32
+Z36 !s110 1718877546
+!i10b 1
+Z37 !s108 1718877546.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_7x4_16.vhd|
+Z39 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_7x4_16.vhd|
+!i113 1
+R11
+R12
+Abehavior
+R14
+R1
+R2
+DEx4 work 17 multiplier_7x4_16 0 22 k6=HcLlVH3W?PYiEoGzN;1
+!i122 16
+l22
+L18 17
+VNMndN1=O2KibZ7neUX9YK2
+!s100 Z9X6?4IDLzV:QH2mC7NkL1
+R6
+32
+R36
+!i10b 1
 R37
 R38
+R39
 !i113 1
+R11
 R12
-R13
-Efsk_modulator
-Z39 w1718203301
-R1
-R2
-R3
-!i122 12
-R4
-Z40 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd
-Z41 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd
-l0
-L5 1
-VUk4lEn]4VVnKeJR_@cK?D1
-!s100 zl45VdGa3g4;MOhgnUXhO0
-R7
-32
-R8
-!i10b 1
-R9
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd|
-Z43 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/fsk_modulator.vhd|
-!i113 1
-R12
-R13
-Abehavioral
-R1
-R2
-R3
-DEx4 work 13 fsk_modulator 0 22 Uk4lEn]4VVnKeJR_@cK?D1
-!i122 12
-l45
-L23 47
-Vm<5NRB?ZeQnE97X_14[9A3
-!s100 JHjoNIdz[LHg<]>1;?^G>1
-R7
-32
-R8
-!i10b 1
-R9
-R42
-R43
-!i113 1
-R12
-R13
-Emulti_standard_modulator
-Z44 w1718383380
-R1
-R2
-R3
-!i122 44
-R15
-Z45 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd
-Z46 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd
-l0
-L5 1
-V3oRKHUezBb012_ZHLS3=`0
-!s100 KJLe9^NiX;@5e2NZ?M`0[2
-R7
-32
-Z47 !s110 1718383407
-!i10b 1
-Z48 !s108 1718383407.000000
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd|
-Z50 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multi_standard_modulator.vhd|
-!i113 1
-R12
-R13
-Astruct
-Z51 DEx4 work 10 multiplier 0 22 j]i[eSnJE5eJ8:KRVB3Ef2
-R1
-R2
-R3
-DEx4 work 24 multi_standard_modulator 0 22 3oRKHUezBb012_ZHLS3=`0
-!i122 44
-l85
-L23 126
-V<JfmaOmcbWIGml7WL`zkA0
-!s100 lI04aFVPF;h>bHkASVa9V2
-R7
-32
-R47
-!i10b 1
-R48
-R49
-R50
-!i113 1
-R12
-R13
-Emulti_standard_modulator_tb
-w1718382981
-R1
-R2
-R3
-!i122 43
-R15
-Z52 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/testbench.vhd
-Z53 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/testbench.vhd
-l0
-L5 1
-VWVcNBC3fI`_O9fW0QiW4c2
-!s100 dK?V^90G=h^BMibLc:@k<0
-R7
-32
-!s110 1718382986
-!i10b 1
-!s108 1718382986.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/testbench.vhd|
-!s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/testbench.vhd|
-!i113 1
-R12
-R13
-Emultiplier
-Z55 w1718382169
-R1
-R2
-R3
-!i122 37
-R15
-Z56 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier.vhd
-Z57 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier.vhd
-l0
-L5 1
-Vj]i[eSnJE5eJ8:KRVB3Ef2
-!s100 ObMQGTeGR2?3mCn;[5f501
-R7
-32
-Z58 !s110 1718382182
-!i10b 1
-Z59 !s108 1718382182.000000
-Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier.vhd|
-Z61 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier.vhd|
-!i113 1
-R12
-R13
-Astruct
-R1
-R2
-R3
-R51
-!i122 37
-l27
-L21 21
-VT?>fQV1RUIbJHHgSbS;`k1
-!s100 ^5mgTMXl9EgMiQRD6FHOW3
-R7
-32
-R58
-!i10b 1
-R59
-R60
-R61
-!i113 1
-R12
-R13
-Enco
-Z62 w1718203516
-R1
-R2
-R3
-!i122 14
-R4
-Z63 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd
-Z64 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd
-l0
-L5 1
-Vb@mJLOd6[hk`]:a4K3<PC0
-!s100 Hd9Je@7e9f=Jo?L9XCQJ=0
-R7
-32
-R8
-!i10b 1
-R9
-Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd|
-Z66 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/nco.vhd|
-!i113 1
-R12
-R13
-Abehavioral
-R1
-R2
-R3
-DEx4 work 3 nco 0 22 b@mJLOd6[hk`]:a4K3<PC0
-!i122 14
-l73
-L22 66
-VB[47AM=?0iD@@UXOW=@`O3
-!s100 zH`:RU]ll;odd3XNKcWek2
-R7
-32
-R8
-!i10b 1
-R9
-R65
-R66
-!i113 1
-R12
-R13
-Epsk_modulator
-w1718210396
-R1
-R2
-R3
-!i122 15
-R4
-8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd
-FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd
-l0
-L5 1
-VofB8[7LEKz[D:M:Q<kB`M1
-!s100 CcTB7JGY@]`cb]eTZ86[A2
-R7
-32
-!s110 1718210472
-!i10b 1
-!s108 1718210472.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd|
-!s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/project_cavedoni/src/psk_modulator.vhd|
-!i113 1
-R12
-R13
 Eripple_carry_adder
-R28
+Z40 w1718706329
+R1
 R2
+!i122 17
 R3
-!i122 29
-R15
-Z67 8C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
-Z68 FC:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
+Z41 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
+Z42 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
 l0
 L4 1
-V1J<eGQc>8@S1OnD^T=O]91
-!s100 ZIM<CD?^g77`Y=I6X0Xmf0
-R7
+VU;]`ml@o6MJ1F9dj^<CTS0
+!s100 ]Ugm0fcLcj_HkoK]^lD553
+R6
 32
-R27
+R36
 !i10b 1
-R31
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
-Z70 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
+R37
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
+Z44 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
 !i113 1
+R11
 R12
-R13
-Abeh
-R2
-R3
-DEx4 work 18 ripple_carry_adder 0 22 1J<eGQc>8@S1OnD^T=O]91
-!i122 29
-l18
-L17 15
-V=`Vlg;]1X[E[aB2O[KNmW3
-!s100 ogFd[Xg9B7QUo<deBiBLf0
-R7
-32
-R27
-!i10b 1
-R31
-R69
-R70
-!i113 1
-R12
-R13
-Etb_multi_standard_modulator
-w1718386519
+Abehavior
 R1
 R2
-R3
-!i122 46
-R15
-R52
-R53
-l0
-L5 1
-Vl9=YZRam9b9XcQ;0M@3mB0
-!s100 C0R>i`YG^_?7dIciCVFfz1
-R7
+DEx4 work 18 ripple_carry_adder 0 22 U;]`ml@o6MJ1F9dj^<CTS0
+!i122 17
+l18
+L17 15
+VAO6b:546<D>bc=bjX_W1]0
+!s100 nJX7Pg0cB?33mghICID>U0
+R6
 32
-!s110 1718386523
+R36
 !i10b 1
-!s108 1718386523.000000
-R54
-Z71 !s107 C:/Users/fedec/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/testbench.vhd|
+R37
+R43
+R44
 !i113 1
+R11
 R12
-R13

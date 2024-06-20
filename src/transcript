@@ -1,40 +1,11 @@
 # Compile of counter.vhd was successful.
 # Compile of ddfs_lut_65536_16bit.vhd was successful.
 # Compile of DFF_N.vhd was successful.
-# Compile of frequency_word_calculator.vhd failed with 1 errors.
-# Compile of multi_standard_modulator.vhd failed with 2 errors.
-# Compile of multiplier.vhd failed with 1 errors.
+# Compile of multi_standard_modulator.vhd failed with 1 errors.
+# Compile of multiplier_7x4_16.vhd was successful.
 # Compile of ripple_carry_adder.vhd was successful.
-# Compile of testbench.vhd failed with 3 errors.
-# 8 compiles, 4 failed with 7 errors.
-# Compile of frequency_word_calculator.vhd was successful with warnings.
-# Compile of frequency_word_calculator.vhd was successful with warnings.
-# Compile of frequency_word_calculator.vhd failed with 4 errors.
-# Compile of frequency_word_calculator.vhd failed with 3 errors.
-# Compile of counter.vhd was successful.
-# Compile of ddfs_lut_65536_16bit.vhd was successful.
-# Compile of DFF_N.vhd was successful.
-# Compile of frequency_word_calculator.vhd was successful with warnings.
+# 6 compiles, 1 failed with 1 error.
+# Compile of multi_standard_modulator.vhd failed with 1 errors.
+# Compile of multi_standard_modulator.vhd failed with 1 errors.
 # Compile of multi_standard_modulator.vhd failed with 2 errors.
-# Compile of multiplier.vhd failed with 1 errors.
-# Compile of ripple_carry_adder.vhd was successful.
-# Compile of testbench.vhd failed with 3 errors.
-# 8 compiles, 3 failed with 6 errors.
-# Compile of testbench.vhd failed with 4 errors.
-# Compile of testbench.vhd failed with 1 errors.
-# Compile of testbench.vhd failed with 19 errors.
-# Compile of multiplier.vhd failed with 3 errors.
-# Compile of multiplier.vhd failed with 2 errors.
-# Compile of multiplier.vhd failed with 1 errors.
-# Compile of multiplier.vhd was successful.
-# Compile of multi_standard_modulator.vhd failed with 5 errors.
 # Compile of multi_standard_modulator.vhd was successful.
-# Compile of testbench.vhd failed with 16 errors.
-# Compile of testbench.vhd failed with 16 errors.
-# Compile of testbench.vhd failed with 16 errors.
-# Compile of testbench.vhd failed with 16 errors.
-# Compile of testbench.vhd failed with 1 errors.
-# Compile of testbench.vhd failed with 1 errors.
-# Compile of multi_standard_modulator.vhd was successful.
-# Compile of testbench.vhd failed with 1 errors.
-# Compile of testbench.vhd failed with 1 errors.

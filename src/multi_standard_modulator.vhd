@@ -69,16 +69,16 @@ architecture behavior of Multi_Standard_Modulator is
     end component;
 
     component multiplier_7x4_16 is
-            generic (
-                N1   : integer := P;
-                N2  : integer := A;
-                O   : integer := O;
-            );
-            Port (
-                A : in STD_LOGIC_VECTOR (N1-1 downto 0);  
-                B : in STD_LOGIC_VECTOR (N2-1 downto 0); 
-                P : out STD_LOGIC_VECTOR (O-1 downto 0) 
-            );
+        generic (
+            N1   : integer := P;
+            N2  : integer := A;
+            O   : integer := O
+        );
+        Port (
+            A : in STD_LOGIC_VECTOR (N1-1 downto 0);  
+            B : in STD_LOGIC_VECTOR (N2-1 downto 0); 
+            P : out STD_LOGIC_VECTOR (O-1 downto 0) 
+        );
 
     end component;
 
@@ -98,8 +98,6 @@ begin
     ADDER: Ripple_Carry_Adder
         generic map (N => N)
         port map (
-            clk     => clk,
-            a_rst_h => reset,
             a       => counter_output,
             b       => phase,
             cin     => '0',
