@@ -8,7 +8,7 @@
 # 7 compiles, 0 failed with no errors.
 vsim -gui work.ddfs_tb
 # vsim -gui work.ddfs_tb 
-# Start time: 18:17:58 on Jun 21,2024
+# Start time: 18:58:50 on Jun 21,2024
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -19,6 +19,8 @@ vsim -gui work.ddfs_tb
 # Loading work.ripple_carry_adder(beh)
 # Loading work.dff_n(struct)
 # Loading work.ddfs_lut_4096_6bit(rtl)
+view -new wave
+# -new not supported on PE
 add wave -position insertpoint  \
 sim:/ddfs_tb/clk_tb \
 sim:/ddfs_tb/reset_tb \
@@ -27,5 +29,3 @@ sim:/ddfs_tb/ddfs_out_tb
 run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /ddfs_tb/DUT/LUT_4096
-# End time: 18:22:37 on Jun 21,2024, Elapsed time: 0:04:39
-# Errors: 0, Warnings: 7

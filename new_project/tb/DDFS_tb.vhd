@@ -52,6 +52,10 @@ architecture testbench of DDFS_tb is
   -- inputs frequency word
   signal fw_tb : std_logic_vector(11 downto 0) := (others => '0');
 
+  signal phase_tb : std_logic_vector(11 downto 0) := (others => '0');
+
+  signal amplitude_tb : std_logic_vector(3 downto 0) := (others => '0');
+
   -- output signals (the declaration is useful to make it visible without observing the ddfs component)
   signal ddfs_out_tb : std_logic_vector(5 downto 0);
 
@@ -66,6 +70,9 @@ begin
     reset => reset_tb,
 
     fw => fw_tb,
+    phase => phase_tb,
+    amplitude => amplitude_tb,
+
     yq => ddfs_out_tb
   );
 
@@ -78,19 +85,27 @@ begin
         when 1 =>
           reset_tb <= '0';
           fw_tb    <= (11 downto 1 => '0') & '1'; -- frequency word = 1
+          phase_tb <= (11 downto 1 => '0') & '1'; -- phase = 1
+          amplitude_tb <= "0001"; -- amplitude = 1
 
-        when DDFS_cycles *  4 => fw_tb <= (11 downto 2 => '0') & "10"; -- frequency word = 2
-                                       -- (1 => '1', others => '0')
+        when DDFS_cycles *  4 => 
+          fw_tb <= (11 downto 2 => '0') & "10"; -- frequency word = 2
+          phase_tb <= (11 downto 2 => '0') & "10"; -- phase = 2
+          amplitude_tb <= "0010"; -- amplitude = 2
 
         when DDFS_cycles *  6 => reset_tb <= '1';
 
         when DDFS_cycles *  7 => reset_tb <= '0';
 
-        when DDFS_cycles *  8 => fw_tb <= (11 downto 3 => '0') & "100"; -- frequency word = 4
-                                       -- (2 => '1', others => '0')
+        when DDFS_cycles *  8 => 
+          fw_tb <= (11 downto 3 => '0') & "100"; -- frequency word = 4
+          phase_tb <= (11 downto 3 => '0') & "100"; -- phase = 4
+          amplitude_tb <= "0100"; -- amplitude = 4
 
-        when DDFS_cycles *  9 => fw_tb <= (11 downto 4 => '0') & "1000"; -- frequency word = 8
-                                       -- (3 => '1', others => '0')
+        when DDFS_cycles *  9 => 
+          fw_tb <= (11 downto 4 => '0') & "1000"; -- frequency word = 8
+          phase_tb <= (11 downto 4 => '0') & "1000"; -- phase = 8
+          amplitude_tb <= "1000"; -- amplitude = 8
 
         when DDFS_cycles * 10 => run_simulation <= '0';
 

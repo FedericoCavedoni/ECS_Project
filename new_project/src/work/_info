@@ -13,21 +13,21 @@ Ecounter
 Z0 w1718097818
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 0
-Z3 dC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src
-Z4 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd
-Z5 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd
+!i122 7
+Z3 dC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src
+Z4 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/Counter.vhd
+Z5 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/Counter.vhd
 l0
 L4 1
 VlDe^XOK1[]d9?2FLOnYbA0
 !s100 T3al1VgnTbOhi[dc[<H<U0
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1718986663
+Z7 !s110 1718989079
 !i10b 1
-Z8 !s108 1718986663.000000
-Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd|
-Z10 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd|
+Z8 !s108 1718989078.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/Counter.vhd|
+Z10 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/Counter.vhd|
 !i113 1
 Z11 o-work work -2002 -explicit
 Z12 tExplicit 1 CvgOpt 0
@@ -35,7 +35,7 @@ Astruct
 R1
 R2
 DEx4 work 7 counter 0 22 lDe^XOK1[]d9?2FLOnYbA0
-!i122 0
+!i122 7
 l58
 L18 66
 V_`E7fa6BkmeOcibH<f=Ya0
@@ -54,10 +54,10 @@ Eddfs
 R0
 R1
 R2
-!i122 1
+!i122 8
 R3
-Z13 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd
-Z14 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd
+Z13 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DDFS.vhd
+Z14 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DDFS.vhd
 l0
 L4 1
 VKS^]F8UZmPWCLzi7OQVQM3
@@ -66,9 +66,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd|
-Z16 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd|
+Z15 !s108 1718989079.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DDFS.vhd|
+Z17 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DDFS.vhd|
 !i113 1
 R11
 R12
@@ -76,7 +76,7 @@ Astruct
 R1
 R2
 DEx4 work 4 ddfs 0 22 KS^]F8UZmPWCLzi7OQVQM3
-!i122 1
+!i122 8
 l51
 L14 69
 V>OI2lY_QJe8Nd@`Y450cF2
@@ -85,21 +85,21 @@ R6
 32
 R7
 !i10b 1
-R8
 R15
 R16
+R17
 !i113 1
 R11
 R12
 Eddfs_lut_4096_6bit
 R0
-Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z18 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 2
+!i122 9
 R3
-Z18 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd
-Z19 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd
+Z19 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ddfs_lut_4096_6bit.vhd
+Z20 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ddfs_lut_4096_6bit.vhd
 l0
 L5 1
 VnSE1QgQALegcol`_9ignh1
@@ -108,18 +108,18 @@ R6
 32
 R7
 !i10b 1
-R8
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd|
-Z21 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd|
+R15
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ddfs_lut_4096_6bit.vhd|
+Z22 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ddfs_lut_4096_6bit.vhd|
 !i113 1
 R11
 R12
 Artl
-R17
+R18
 R1
 R2
 DEx4 work 18 ddfs_lut_4096_6bit 0 22 nSE1QgQALegcol`_9ignh1
-!i122 2
+!i122 9
 l4114
 L12 4105
 V1QkdPkfl_^]N;lGiBUNbA1
@@ -128,21 +128,21 @@ R6
 32
 R7
 !i10b 1
-R8
-R20
+R15
 R21
+R22
 !i113 1
 R11
 R12
 Eddfs_tb
 R0
-R17
+R18
 R1
 R2
-!i122 6
+!i122 13
 R3
-Z22 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd
-Z23 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd
+Z23 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/tb/DDFS_tb.vhd
+Z24 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/tb/DDFS_tb.vhd
 l0
 L5 1
 V=<`LeJI<]ConV5m:T;T?83
@@ -151,29 +151,29 @@ R6
 32
 R7
 !i10b 1
-R8
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd|
-!s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd|
+R15
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/tb/DDFS_tb.vhd|
+!s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/tb/DDFS_tb.vhd|
 !i113 1
 R11
 R12
 Atestbench
-R17
+R18
 R1
 R2
-DEx4 work 7 ddfs_tb 0 22 =<`LeJI<]ConV5m:T;T?83
-!i122 6
+Z26 DEx4 work 7 ddfs_tb 0 22 =<`LeJI<]ConV5m:T;T?83
+!i122 13
 l58
-L8 100
-VhXJRBLK[k1<knS3WdhKcF1
-!s100 jgh:X@bLd8`XW;DUW<09o3
+Z27 L8 100
+Z28 VhXJRBLK[k1<knS3WdhKcF1
+Z29 !s100 jgh:X@bLd8`XW;DUW<09o3
 R6
 32
 R7
 !i10b 1
-R8
-R24
-Z25 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd|
+R15
+R25
+Z30 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/tb/DDFS_tb.vhd|
 !i113 1
 R11
 R12
@@ -181,10 +181,10 @@ Edff_n
 R0
 R1
 R2
-!i122 3
+!i122 10
 R3
-Z26 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd
-Z27 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd
+Z31 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DFF_N.vhd
+Z32 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DFF_N.vhd
 l0
 L4 1
 VbgdlQGDOf>Dh;Mi=@Z>An0
@@ -193,9 +193,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd|
-Z29 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd|
+R15
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DFF_N.vhd|
+Z34 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/DFF_N.vhd|
 !i113 1
 R11
 R12
@@ -203,7 +203,7 @@ Astruct
 R1
 R2
 DEx4 work 5 dff_n 0 22 bgdlQGDOf>Dh;Mi=@Z>An0
-!i122 3
+!i122 10
 l18
 L17 14
 V87`d_DOLL]5<aF[>28e5L1
@@ -212,9 +212,9 @@ R6
 32
 R7
 !i10b 1
-R8
-R28
-R29
+R15
+R33
+R34
 !i113 1
 R11
 R12
@@ -222,10 +222,10 @@ Efull_adder
 R0
 R1
 R2
-!i122 4
+!i122 11
 R3
-Z30 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd
-Z31 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd
+Z35 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/full_adder.vhd
+Z36 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/full_adder.vhd
 l0
 L4 1
 V6E`C_L8PY9BEToE4AEinX2
@@ -234,9 +234,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd|
-Z33 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd|
+R15
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/full_adder.vhd|
+Z38 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/full_adder.vhd|
 !i113 1
 R11
 R12
@@ -244,7 +244,7 @@ Abeh
 R1
 R2
 DEx4 work 10 full_adder 0 22 6E`C_L8PY9BEToE4AEinX2
-!i122 4
+!i122 11
 l15
 L14 7
 VX=AYZ6e^n8nm?Rb7dbU0>2
@@ -253,9 +253,9 @@ R6
 32
 R7
 !i10b 1
-R8
-R32
-R33
+R15
+R37
+R38
 !i113 1
 R11
 R12
@@ -263,10 +263,10 @@ Eripple_carry_adder
 R0
 R1
 R2
-!i122 5
+!i122 12
 R3
-Z34 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd
-Z35 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd
+Z39 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ripple_carry_adder.vhd
+Z40 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ripple_carry_adder.vhd
 l0
 L4 1
 V1J<eGQc>8@S1OnD^T=O]91
@@ -275,9 +275,9 @@ R6
 32
 R7
 !i10b 1
-R8
-Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd|
-Z37 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd|
+R15
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ripple_carry_adder.vhd|
+Z42 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/new_project/src/ripple_carry_adder.vhd|
 !i113 1
 R11
 R12
@@ -285,7 +285,7 @@ Abeh
 R1
 R2
 DEx4 work 18 ripple_carry_adder 0 22 1J<eGQc>8@S1OnD^T=O]91
-!i122 5
+!i122 12
 l18
 L17 15
 V=`Vlg;]1X[E[aB2O[KNmW3
@@ -294,9 +294,9 @@ R6
 32
 R7
 !i10b 1
-R8
-R36
-R37
+R15
+R41
+R42
 !i113 1
 R11
 R12

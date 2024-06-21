@@ -7,6 +7,9 @@ entity DDFS is
     reset : in std_logic;  -- Asynchronous reset - active high
 
     fw : in std_logic_vector(11 downto 0);  -- input frequency word
+    phase: in std_logic_vector(11 downto 0);  -- input phase
+    amplitude : in std_logic_vector(3 downto 0);  -- input amplitude
+
     yq : out std_logic_vector(5 downto 0)   -- output waveform
   );
 end entity;
@@ -18,6 +21,8 @@ architecture struct of DDFS is
 
   -- Output of of the phase accumulator counter
   signal phase_out : std_logic_vector(11 downto 0);
+
+  signal adder_out : std_logic_vector(11 downto 0);
 
   -- Output of the LUT table
   signal lut_output : std_logic_vector(5 downto 0);
@@ -41,6 +46,18 @@ architecture struct of DDFS is
     );
   end component;
 
+  component adder is
+    port (
+      clk       : in  std_logic;
+      a_rst_h   : in  std_logic;
+      en        : in  std_logic;
+  
+      a : in  std_logic_vector(11 downto 0);
+      b : in  std_logic_vector(11 downto 0);
+      adder_out  : out std_logic_vector(11 downto 0)
+    );
+  end component;
+
   component ddfs_lut_4096_6bit is
     port (
       address  : in std_logic_vector(11 downto 0);
@@ -61,6 +78,15 @@ begin
       cntr_out  => phase_out
     );
 
+  ADDER: adder
+    port map(
+      clk       => clk,
+      a_rst_h   => reset,
+      en        => '1',
+      a         => phase_out,
+      b         => phase,
+      adder_out => adder_out
+    );
 
   LUT_4096 : ddfs_lut_4096_6bit
     port map(
