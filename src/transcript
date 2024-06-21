@@ -1,11 +1,59 @@
 # Compile of counter.vhd was successful.
 # Compile of ddfs_lut_65536_16bit.vhd was successful.
 # Compile of DFF_N.vhd was successful.
-# Compile of multi_standard_modulator.vhd failed with 1 errors.
+# Compile of multi_standard_modulator.vhd was successful.
 # Compile of multiplier_7x4_16.vhd was successful.
 # Compile of ripple_carry_adder.vhd was successful.
-# 6 compiles, 1 failed with 1 error.
-# Compile of multi_standard_modulator.vhd failed with 1 errors.
-# Compile of multi_standard_modulator.vhd failed with 1 errors.
-# Compile of multi_standard_modulator.vhd failed with 2 errors.
-# Compile of multi_standard_modulator.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.msm_tb
+# vsim -gui work.msm_tb 
+# Start time: 10:43:20 on Jun 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.multi_standard_modulator(behavior)
+# Loading work.counter(behavior)
+# Loading work.ripple_carry_adder(behavior)
+# ** Fatal: (vsim-3348) Port length (8) does not match actual length (16) for port "/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/a".
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP File: C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd Line: 9
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 10:43:20 on Jun 21,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vsim -gui work.msm_tb
+# vsim -gui work.msm_tb 
+# Start time: 10:43:36 on Jun 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.multi_standard_modulator(behavior)
+# Loading work.counter(behavior)
+# Loading work.ripple_carry_adder(behavior)
+# ** Fatal: (vsim-3348) Port length (8) does not match actual length (16) for port "/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/a".
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP File: C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd Line: 9
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 10:43:37 on Jun 21,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -gui work.msm_tb
+# vsim -gui work.msm_tb 
+# Start time: 10:44:04 on Jun 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.multi_standard_modulator(behavior)
+# Loading work.counter(behavior)
+# Loading work.ripple_carry_adder(behavior)
+# ** Fatal: (vsim-3348) Port length (8) does not match actual length (16) for port "/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/a".
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP File: C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd Line: 9
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 10:44:05 on Jun 21,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
