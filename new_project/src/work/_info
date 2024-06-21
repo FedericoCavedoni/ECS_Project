@@ -1,0 +1,302 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src
+Ecounter
+Z0 w1718097818
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z3 dC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src
+Z4 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd
+Z5 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd
+l0
+L4 1
+VlDe^XOK1[]d9?2FLOnYbA0
+!s100 T3al1VgnTbOhi[dc[<H<U0
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1718986663
+!i10b 1
+Z8 !s108 1718986663.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd|
+Z10 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/Counter.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit
+Z12 tExplicit 1 CvgOpt 0
+Astruct
+R1
+R2
+DEx4 work 7 counter 0 22 lDe^XOK1[]d9?2FLOnYbA0
+!i122 0
+l58
+L18 66
+V_`E7fa6BkmeOcibH<f=Ya0
+!s100 eAj:]K0lGTWTD@ZEc?3<i3
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eddfs
+R0
+R1
+R2
+!i122 1
+R3
+Z13 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd
+Z14 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd
+l0
+L4 1
+VKS^]F8UZmPWCLzi7OQVQM3
+!s100 GX?QMb9gF84FoQ9=K@0_c0
+R6
+32
+R7
+!i10b 1
+R8
+Z15 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd|
+Z16 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DDFS.vhd|
+!i113 1
+R11
+R12
+Astruct
+R1
+R2
+DEx4 work 4 ddfs 0 22 KS^]F8UZmPWCLzi7OQVQM3
+!i122 1
+l51
+L14 69
+V>OI2lY_QJe8Nd@`Y450cF2
+!s100 f23Y3^NgZ4PJ2H6c>SSmJ1
+R6
+32
+R7
+!i10b 1
+R8
+R15
+R16
+!i113 1
+R11
+R12
+Eddfs_lut_4096_6bit
+R0
+Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 2
+R3
+Z18 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd
+Z19 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd
+l0
+L5 1
+VnSE1QgQALegcol`_9ignh1
+!s100 RY<E_KiT`L@>oI7;EmWh:0
+R6
+32
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd|
+Z21 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ddfs_lut_4096_6bit.vhd|
+!i113 1
+R11
+R12
+Artl
+R17
+R1
+R2
+DEx4 work 18 ddfs_lut_4096_6bit 0 22 nSE1QgQALegcol`_9ignh1
+!i122 2
+l4114
+L12 4105
+V1QkdPkfl_^]N;lGiBUNbA1
+!s100 T@OiHQC6FLOl7cnlAk1U<2
+R6
+32
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12
+Eddfs_tb
+R0
+R17
+R1
+R2
+!i122 6
+R3
+Z22 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd
+Z23 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd
+l0
+L5 1
+V=<`LeJI<]ConV5m:T;T?83
+!s100 ni0KdImONVMH4m7a3^FNQ2
+R6
+32
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd|
+!s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd|
+!i113 1
+R11
+R12
+Atestbench
+R17
+R1
+R2
+DEx4 work 7 ddfs_tb 0 22 =<`LeJI<]ConV5m:T;T?83
+!i122 6
+l58
+L8 100
+VhXJRBLK[k1<knS3WdhKcF1
+!s100 jgh:X@bLd8`XW;DUW<09o3
+R6
+32
+R7
+!i10b 1
+R8
+R24
+Z25 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/tb/DDFS_tb.vhd|
+!i113 1
+R11
+R12
+Edff_n
+R0
+R1
+R2
+!i122 3
+R3
+Z26 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd
+Z27 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd
+l0
+L4 1
+VbgdlQGDOf>Dh;Mi=@Z>An0
+!s100 eO@zFk`QPn4?5DQhFO[2k0
+R6
+32
+R7
+!i10b 1
+R8
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd|
+Z29 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/DFF_N.vhd|
+!i113 1
+R11
+R12
+Astruct
+R1
+R2
+DEx4 work 5 dff_n 0 22 bgdlQGDOf>Dh;Mi=@Z>An0
+!i122 3
+l18
+L17 14
+V87`d_DOLL]5<aF[>28e5L1
+!s100 75do]WfmEi:P=Vl<bMoYM2
+R6
+32
+R7
+!i10b 1
+R8
+R28
+R29
+!i113 1
+R11
+R12
+Efull_adder
+R0
+R1
+R2
+!i122 4
+R3
+Z30 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd
+Z31 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd
+l0
+L4 1
+V6E`C_L8PY9BEToE4AEinX2
+!s100 ]6aSe`f5Y6US@n:?L_zXD2
+R6
+32
+R7
+!i10b 1
+R8
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd|
+Z33 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/full_adder.vhd|
+!i113 1
+R11
+R12
+Abeh
+R1
+R2
+DEx4 work 10 full_adder 0 22 6E`C_L8PY9BEToE4AEinX2
+!i122 4
+l15
+L14 7
+VX=AYZ6e^n8nm?Rb7dbU0>2
+!s100 6T8=fA[lK`ci9kO7a6MVf2
+R6
+32
+R7
+!i10b 1
+R8
+R32
+R33
+!i113 1
+R11
+R12
+Eripple_carry_adder
+R0
+R1
+R2
+!i122 5
+R3
+Z34 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd
+Z35 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd
+l0
+L4 1
+V1J<eGQc>8@S1OnD^T=O]91
+!s100 ZIM<CD?^g77`Y=I6X0Xmf0
+R6
+32
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd|
+Z37 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Per preparare esame/Electronics/Labs/VHDL Files/07_ddfs/src/ripple_carry_adder.vhd|
+!i113 1
+R11
+R12
+Abeh
+R1
+R2
+DEx4 work 18 ripple_carry_adder 0 22 1J<eGQc>8@S1OnD^T=O]91
+!i122 5
+l18
+L17 15
+V=`Vlg;]1X[E[aB2O[KNmW3
+!s100 ogFd[Xg9B7QUo<deBiBLf0
+R6
+32
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12

@@ -1,0 +1,220 @@
+# Compile of counter.vhd was successful.
+# Compile of ddfs_lut_65536_7bit.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of multi_standard_modulator.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.msm_tb
+# vsim -gui work.msm_tb 
+# Start time: 17:46:26 on Jun 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.multi_standard_modulator(behavior)
+# Loading work.counter(behavior)
+# Loading work.ripple_carry_adder(behavior)
+# Loading work.dff_n(struct)
+# Loading work.ddfs_lut_65536_7bit(rtl)
+# Loading work.multiplier_nxn(behavior)
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+vsim -gui work.msm_tb(testbench)
+# End time: 17:49:12 on Jun 21,2024, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 1
+# vsim -gui work.msm_tb(testbench) 
+# Start time: 17:49:12 on Jun 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.multi_standard_modulator(behavior)
+# Loading work.counter(behavior)
+# Loading work.ripple_carry_adder(behavior)
+# Loading work.dff_n(struct)
+# Loading work.ddfs_lut_65536_7bit(rtl)
+# Loading work.multiplier_nxn(behavior)
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb \
+sim:/msm_tb/MSM_cycles \
+sim:/msm_tb/T_max_period
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb \
+sim:/msm_tb/MSM_cycles \
+sim:/msm_tb/T_max_period
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb \
+sim:/msm_tb/MSM_cycles \
+sim:/msm_tb/T_max_period
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/clk \
+sim:/msm_tb/DUT/reset \
+sim:/msm_tb/DUT/frequency \
+sim:/msm_tb/DUT/phase \
+sim:/msm_tb/DUT/amplitude \
+sim:/msm_tb/DUT/yq
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/clk \
+sim:/msm_tb/DUT/reset \
+sim:/msm_tb/DUT/frequency \
+sim:/msm_tb/DUT/phase \
+sim:/msm_tb/DUT/amplitude \
+sim:/msm_tb/DUT/yq
+quit -sim
+# End time: 17:59:12 on Jun 21,2024, Elapsed time: 0:10:00
+# Errors: 0, Warnings: 2
+# Compile of counter.vhd was successful.
+# Compile of ddfs_lut_65536_7bit.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of multi_standard_modulator.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of MSM_tb.vhd was successful.
+vsim -gui work.msm_tb
+# vsim -gui work.msm_tb 
+# Start time: 18:02:05 on Jun 21,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.multi_standard_modulator(behavior)
+# Loading work.counter(behavior)
+# Loading work.ripple_carry_adder(behavior)
+# Loading work.dff_n(struct)
+# Loading work.ddfs_lut_65536_7bit(rtl)
+# Loading work.multiplier_nxn(behavior)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/clk_tb \
+sim:/msm_tb/reset_tb \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/clk \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/increment \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/cntr_out
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/DFF_N_MAP/clk \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/DFF_N_MAP/en \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/DFF_N_MAP/d \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/DFF_N_MAP/q
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/N \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/a \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/b \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/cin \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/s \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/FULL_ADDER_N_MAP/cout
+# End time: 18:16:33 on Jun 21,2024, Elapsed time: 0:14:28
+# Errors: 0, Warnings: 4
+# Closing project C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ECS_Project.mpf
