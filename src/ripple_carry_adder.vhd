@@ -3,7 +3,7 @@ library ieee;
 
 entity ripple_carry_adder is
   generic (
-    N : positive := 8
+    N : positive := 16
   );
   port (
     a    : in  std_logic_vector(N - 1 downto 0);

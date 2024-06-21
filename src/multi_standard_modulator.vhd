@@ -61,7 +61,7 @@ architecture behavior of Multi_Standard_Modulator is
         );
     end component;
 
-    component ddfs_lut_65536_16bit is
+    component ddfs_lut_65536_7bit is
         Port (
             address  : in  std_logic_vector(N downto 0);
             ddfs_out : out std_logic_vector(P downto 0)
@@ -105,7 +105,7 @@ begin
             cout    => open
         );
 
-    LUT_65536 : ddfs_lut_65536_16bit
+    LUT_65536 : ddfs_lut_65536_7bit
         port map (
             address  => adder_output,
             ddfs_out => lut_output

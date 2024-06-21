@@ -44,13 +44,13 @@ architecture behavior of Counter is
   end component;
 
   component ripple_carry_adder is
-    generic (Nbit : integer := 16);
+    generic (N : integer := 16);
 
     port (
-      a    : in std_logic_vector(Nbit - 1 downto 0);
-      b    : in std_logic_vector(Nbit - 1 downto 0);
+      a    : in std_logic_vector(N - 1 downto 0);
+      b    : in std_logic_vector(N - 1 downto 0);
       cin  : in std_logic;
-      s    : out std_logic_vector (Nbit - 1 downto 0);
+      s    : out std_logic_vector (N - 1 downto 0);
       cout : out std_logic
     );
   end component;
@@ -58,7 +58,7 @@ architecture behavior of Counter is
 begin
 
   FULL_ADDER_N_MAP : ripple_carry_adder
-    generic map (Nbit => N)
+    generic map (N => N)
     port map (
       a    => increment,
       b    => q_h,
