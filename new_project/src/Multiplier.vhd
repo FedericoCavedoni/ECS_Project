@@ -1,9 +1,9 @@
 library ieee;
   use ieee.std_logic_1164.all;
 
-entity Adder is
+entity Multiplier is
   generic (
-    N : natural := 12
+    N : natural := 6
   );
   port (
     clk       : in  std_logic;
@@ -12,21 +12,21 @@ entity Adder is
 
     a : in  std_logic_vector(N - 1 downto 0);
     b : in  std_logic_vector(N - 1 downto 0);
-    adder_out  : out std_logic_vector(N - 1 downto 0)
+    mul_out  : out std_logic_vector(2*N - 1 downto 0)
   );
 
 end entity;
 
-architecture struct of Adder is
+architecture behavior of Multiplier is
   --------------------------------------------------------------
   -- Signals declaration
   --------------------------------------------------------------
 
-  -- Output of the fullAdder_N
-  signal fullAdder_out : std_logic_vector(N - 1 downto 0);
+  -- Output of the fullMultiplier_N
+  signal mul_nxn_out : std_logic_vector(2*N - 1 downto 0);
 
   -- Output of the DFF_N
-  signal dff_out : std_logic_vector(N - 1 downto 0);
+  signal dff_out : std_logic_vector(2*N - 1 downto 0);
 
 
   --------------------------------------------------------------
@@ -34,7 +34,7 @@ architecture struct of Adder is
   --------------------------------------------------------------
 
   component DFF_N is
-    generic( N : natural := N);
+    generic( N : natural := 2*N);
 
     port(
       clk     : in std_logic;
@@ -45,41 +45,38 @@ architecture struct of Adder is
     );
   end component;
 
-  component ripple_carry_adder is
-    generic (Nbit : integer := N);
+  component multiplier_NxN is
+    generic (N : integer := N);
 
     port (
-      a    : in std_logic_vector(Nbit - 1 downto 0);
-      b    : in std_logic_vector(Nbit - 1 downto 0);
-      cin  : in std_logic;
-      s    : out std_logic_vector (Nbit - 1 downto 0);
-      cout : out std_logic
+      A    : in std_logic_vector(N- 1 downto 0);
+      B    : in std_logic_vector(N- 1 downto 0);
+      P    : out std_logic_vector (2*N- 1 downto 0)
     );
   end component;
 
 begin
 
-  FULL_ADDER_N_MAP : ripple_carry_adder
-    generic map (Nbit => N)
+  MULTIPLIER_N : multiplier_NxN
+    generic map (N=> N)
     port map (
-      a    => a,
-      b    => b,
-      cin  => '0',
-      s    => fullAdder_out,
-      cout => open
+        A => a,
+        B => b,
+        P => mul_nxn_out
     );
 
   DFF_N_MAP : DFF_N
-    generic map (N => N)
+    generic map (N => 2*N)
     port map (
       clk     => clk,
       a_rst_h => a_rst_h,
-      d       => fullAdder_out,
+
+      d       => mul_nxn_out,
       en      => en,
       q       => dff_out
     );
 
   -- Connect the output
-  adder_out <= dff_out;
+  mul_out <= dff_out;
 
 end architecture;

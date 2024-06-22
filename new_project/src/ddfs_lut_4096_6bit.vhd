@@ -3,9 +3,13 @@ library IEEE;
   use IEEE.numeric_std.all;
 
 entity ddfs_lut_4096_6bit is
+  generic (
+    N : integer := 12; -- address width
+    P : integer := 6  -- output width
+  );
   port (
-    address  : in  std_logic_vector(11 downto 0);
-    ddfs_out : out std_logic_vector(5 downto 0)
+    address  : in  std_logic_vector(N-1 downto 0);
+    ddfs_out : out std_logic_vector(P-1 downto 0)
   );
 end entity;
 
@@ -4112,5 +4116,5 @@ architecture rtl of ddfs_lut_4096_6bit is
   );
 
 begin
-  ddfs_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),6));
+  ddfs_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),P));
 end architecture;
