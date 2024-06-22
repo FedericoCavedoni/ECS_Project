@@ -26,10 +26,10 @@ architecture struct of MSM is
 -- Internal signals
 -------------------------------------------------------------------------------------
 
-  -- Output of of the phase accumulator counter
-  signal phase_out : std_logic_vector(N-1 downto 0);
-
   signal adder_out : std_logic_vector(N-1 downto 0);
+
+  -- Output of of the phase accumulator counter
+  signal counter_out : std_logic_vector(N-1 downto 0);
 
   -- Output of the LUT table
   signal lut_output : std_logic_vector(P-1 downto 0);
@@ -47,64 +47,54 @@ architecture struct of MSM is
 -------------------------------------------------------------------------------------
 -- Internal Component
 -------------------------------------------------------------------------------------
-  component Counter is
-    generic ( N : natural := N );
-    port (
-      clk     : in  std_logic;
-      a_rst_h : in  std_logic;
-      en        : in  std_logic;
-      
-      increment : in  std_logic_vector(N - 1 downto 0);
-      cntr_out  : out std_logic_vector(N - 1 downto 0)
+
+component Adder is
+  generic ( N : natural := N );
+  port (
+    clk       : in  std_logic;
+    a_rst_h   : in  std_logic;
+    en        : in  std_logic;
+
+    a : in  std_logic_vector(N-1 downto 0);
+    b : in  std_logic_vector(N-1 downto 0);
+    adder_out  : out std_logic_vector(N-1 downto 0)
+  );
+end component;
+
+component Counter is
+  generic ( N : natural := N );
+  port (
+    clk     : in  std_logic;
+    a_rst_h : in  std_logic;
+    en        : in  std_logic;
+    
+    increment : in  std_logic_vector(N - 1 downto 0);
+    cntr_out  : out std_logic_vector(N - 1 downto 0)
+  );
+end component;
+
+component lut_table_65536_7bit is
+  generic ( N : natural := N; P : natural := P );
+  port (
+    address  : in std_logic_vector(N-1 downto 0);
+    lut_out : out std_logic_vector(O-1 downto 0)
     );
   end component;
 
-  component Adder is
-    generic ( N : natural := N );
-    port (
-      clk       : in  std_logic;
-      a_rst_h   : in  std_logic;
-      en        : in  std_logic;
-  
-      a : in  std_logic_vector(N-1 downto 0);
-      b : in  std_logic_vector(N-1 downto 0);
-      adder_out  : out std_logic_vector(N-1 downto 0)
-    );
-  end component;
+component Multiplier is
+  generic ( N : natural := P );
+  port (
+    clk       : in  std_logic;
+    a_rst_h   : in  std_logic;
+    en        : in  std_logic;
 
-  component lut_table_65536_7bit is
-    generic ( N : natural := N; P : natural := P );
-    port (
-      address  : in std_logic_vector(N-1 downto 0);
-      lut_out : out std_logic_vector(O-1 downto 0)
-      );
-  end component;
-
-  component Multiplier is
-    generic ( N : natural := P );
-    port (
-      clk       : in  std_logic;
-      a_rst_h   : in  std_logic;
-      en        : in  std_logic;
-  
-      a : in  std_logic_vector(N-1 downto 0);
-      b : in  std_logic_vector(N-1 downto 0);
-      mul_out  : out std_logic_vector(O-1 downto 0)
-    );
-  end component;
+    a : in  std_logic_vector(N-1 downto 0);
+    b : in  std_logic_vector(N-1 downto 0);
+    mul_out  : out std_logic_vector(O-1 downto 0)
+  );
+end component;
 
 begin
-
-  PHASE_ACCUMULATOR: Counter
-    generic map (N => N)
-    port map (
-      clk     => clk,
-      a_rst_h => reset,
-
-      increment => fw,
-      en        => '1',
-      cntr_out  => phase_out
-    );
 
   PHASE_ADDER: adder
     generic map (N => N)
@@ -113,15 +103,26 @@ begin
       a_rst_h   => reset,
 
       en        => '1',
-      a         => phase_out,
+      a         => fw,
       b         => phase,
       adder_out => adder_out
+    );
+
+  PHASE_ACCUMULATOR: Counter
+    generic map (N => N)
+    port map (
+      clk     => clk,
+      a_rst_h => reset,
+
+      increment => adder_out,
+      en        => '1',
+      cntr_out  => counter_out
     );
 
   LUT_65536 : lut_table_65536_7bit
     generic map (N => N, P => P)
     port map(
-      address  => adder_out,
+      address  => counter_out,
       lut_out => lut_output
     );
 
