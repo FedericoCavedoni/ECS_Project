@@ -16,7 +16,7 @@ end multiplier_NxN;
 architecture behavior of multiplier_NxN is
     signal temp_result : unsigned(2*N-1 downto 0); -- Temporary result for multiplication
 begin
-    process (A, B)
+    process (A, B, temp_result)
     begin
         -- Perform the multiplication and assign it to temp_result
         temp_result <= unsigned(A) * unsigned(B);

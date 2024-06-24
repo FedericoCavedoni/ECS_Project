@@ -21,7 +21,7 @@ entity MSM is
   );
 end entity;
 
-architecture struct of MSM is
+architecture behavior of MSM is
 -------------------------------------------------------------------------------------
 -- Internal signals
 -------------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ component lut_table_65536_7bit is
   generic ( N : natural := N; P : natural := P );
   port (
     address  : in std_logic_vector(N-1 downto 0);
-    lut_out : out std_logic_vector(O-1 downto 0)
+    lut_out  : out std_logic_vector(P-1 downto 0)
     );
   end component;
 
@@ -90,7 +90,7 @@ component Multiplier is
 
     a : in  std_logic_vector(N-1 downto 0);
     b : in  std_logic_vector(N-1 downto 0);
-    mul_out  : out std_logic_vector(O-1 downto 0)
+    mul_out  : out std_logic_vector(2*N-1 downto 0)
   );
 end component;
 
