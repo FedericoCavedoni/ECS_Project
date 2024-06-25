@@ -14,14 +14,19 @@ entity multiplier_NxN is
 end multiplier_NxN;
 
 architecture behavior of multiplier_NxN is
-    signal temp_result : unsigned(2*N-1 downto 0); -- Temporary result for multiplication
+    signal signed_A, signed_B : signed(N-1 downto 0); -- Signed versions of A and B
+    signal temp_result : signed(2*N-1 downto 0); -- Temporary result for multiplication
 begin
-    process (A, B, temp_result)
+    process (A, B)
     begin
-        -- Perform the multiplication and assign it to temp_result
-        temp_result <= unsigned(A) * unsigned(B);
+        -- Convert inputs to signed
+        signed_A <= signed(A);
+        signed_B <= signed(B);
 
-        -- Assign the result to the output port P
+        -- Perform the multiplication as signed and assign it to temp_result
+        temp_result <= signed_A * signed_B;
+
+        -- Assign the signed result to the output port P, converting to std_logic_vector
         P <= std_logic_vector(temp_result);
     end process;
 end behavior;

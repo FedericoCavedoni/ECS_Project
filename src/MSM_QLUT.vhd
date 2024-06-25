@@ -31,8 +31,12 @@ architecture behavior of MSM is
 
   signal adder_out : std_logic_vector(N-1 downto 0);
 
+  signal lut_address : std_logic_vector(N-3 downto 0);
+
   -- Output of the LUT table
   signal lut_output : std_logic_vector(P-1 downto 0);
+
+  signal lut_output_muxed : std_logic_vector(P-1 downto 0);
 
   signal amp_ext : std_logic_vector(P-1 downto 0);
 
@@ -69,8 +73,8 @@ component Adder is
   );
 end component;
 
-component lut_table_65536_7bit is
-  generic ( N : natural := N; P : natural := P );
+component lut_table_16384_7bit is
+  generic ( N : natural := N-2; P : natural := P );
   port (
     address  : in std_logic_vector(N-1 downto 0);
     lut_out  : out std_logic_vector(P-1 downto 0)
@@ -107,24 +111,28 @@ begin
       adder_out => adder_out
     );
 
-  LUT_65536 : lut_table_65536_7bit
-    generic map (N => N, P => P)
-    port map(
-      address  => adder_out,
-      lut_out => lut_output
-    );
+    lut_address <= adder_out(N-3 downto 0) when (adder_out(N-2) = '0') else not(adder_out(N-3 downto 0) );
 
-    amp_ext <= (P-1 downto A => '0') & amplitude;
-
-    MULTIPLIER_N: Multiplier
-      generic map (N => P)
+    LUT_16384 : lut_table_16384_7bit
+      generic map (N => N-2, P => P)
       port map(
-        a         => amp_ext,
-        b         => lut_output,
-        mul_out   => multiplier_output
+        address  => lut_address,
+        lut_out => lut_output
       );
-
-  mul_ext <= (O-1 downto 2*P => multiplier_output(2*P-1)) & multiplier_output;
+  
+    lut_output_muxed <= lut_output when (adder_out(N-1) = '0') else not(lut_output);
+  
+      amp_ext <= (P-1 downto A => '0') & amplitude;
+  
+      MULTIPLIER_N: Multiplier
+        generic map (N => P)
+        port map(
+          a         => amp_ext,
+          b         => lut_output_muxed,
+          mul_out   => multiplier_output
+        );
+  
+    mul_ext <= (O-1 downto 2*P => multiplier_output(2*P-1)) & multiplier_output;
 
   MSM_OUTPUT_REG: process(clk, reset)
   begin
@@ -138,3 +146,6 @@ begin
   yq <= output_reg;
 
 end architecture;
+
+
+  

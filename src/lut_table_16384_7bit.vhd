@@ -2,14 +2,18 @@ library IEEE;
   use IEEE.std_logic_1164.all;
   use IEEE.numeric_std.all;
 
-entity ddfs_lut_16384_7bit is
+entity lut_table_16384_7bit is
+  generic (
+    N : integer := 14;
+    P : integer := 7
+  );
   port (
-    address  : in  std_logic_vector(13 downto 0);
-    ddfs_out : out std_logic_vector(6 downto 0)
+    address  : in  std_logic_vector(N-1 downto 0);
+    lut_out : out std_logic_vector(P-1 downto 0)
   );
 end entity;
 
-architecture rtl of ddfs_lut_16384_7bit is
+architecture behavior of lut_table_16384_7bit is
 
   type LUT_t is array (natural range 0 to 16383) of integer;
   constant LUT: LUT_t := (
@@ -16400,5 +16404,5 @@ architecture rtl of ddfs_lut_16384_7bit is
   );
 
 begin
-  ddfs_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),7));
+  lut_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),P));
 end architecture;

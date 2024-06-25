@@ -31,18 +31,6 @@ architecture struct of Counter is
   -- Components declaration
   --------------------------------------------------------------
 
-  component DFF_N is
-    generic( N : natural := 8);
-
-    port(
-      clk     : in std_logic;
-      a_rst_h : in std_logic;
-      en      : in std_logic;
-      d       : in std_logic_vector(N - 1 downto 0);
-      q       : out std_logic_vector(N - 1 downto 0)
-    );
-  end component;
-
   component ripple_carry_adder is
     generic (Nbit : integer := 8);
 
@@ -52,6 +40,18 @@ architecture struct of Counter is
       cin  : in std_logic;
       s    : out std_logic_vector (Nbit - 1 downto 0);
       cout : out std_logic
+    );
+  end component;
+  
+  component DFF_N is
+    generic( N : natural := 8);
+
+    port(
+      clk     : in std_logic;
+      a_rst_h : in std_logic;
+      en      : in std_logic;
+      d       : in std_logic_vector(N - 1 downto 0);
+      q       : out std_logic_vector(N - 1 downto 0)
     );
   end component;
 
