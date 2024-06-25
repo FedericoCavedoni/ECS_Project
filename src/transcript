@@ -1275,3 +1275,131 @@ run -all
 # 
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# Compile of Adder.vhd was successful.
+# Compile of Counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.msm_tb(testbench)
+# Loading work.msm(behavior)
+# Loading work.adder(struct)
+# Loading work.ripple_carry_adder(beh)
+# Loading work.counter(struct)
+# Loading work.dff_n(struct)
+# Loading work.lut_table_65536_7bit(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.multiplier_nxn(behavior)
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+quit -sim
+# End time: 21:12:54 on Jun 25,2024, Elapsed time: 0:42:11
+# Errors: 0, Warnings: 2
+# Compile of Counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of Counter.vhd was successful with warnings.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# Compile of Phase_Adder.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# 8 compiles, 1 failed with no errors.
+# Compile of Counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# Compile of Phase_Adder.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -gui work.msm_tb
+# vsim -gui work.msm_tb 
+# Start time: 21:15:51 on Jun 25,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.msm_tb(testbench)
+# Loading work.msm(behavior)
+# Loading work.counter(struct)
+# Loading work.ripple_carry_adder(beh)
+# Loading work.dff_n(struct)
+# Loading work.phase_adder(behavior)
+# Loading work.lut_table_65536_7bit(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.multiplier_nxn(behavior)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fedec  Hostname: LAPTOP-8QJ55Q84  ProcessID: 1868
+#           Attempting to use alternate WLF file "./wlft629q08".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft629q08
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/PHASE_ADDER_N/freq \
+sim:/msm_tb/DUT/PHASE_ADDER_N/phase \
+sim:/msm_tb/DUT/PHASE_ADDER_N/freq_out
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/phase_tb
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/PHASE_ACCUMULATOR/cntr_out
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/LUT_65536/address
+add wave -position insertpoint  \
+sim:/msm_tb/DUT/LUT_65536/lut_out
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N

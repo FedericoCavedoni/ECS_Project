@@ -91,27 +91,27 @@ begin
         when MSM_cycles * 8 =>
           reset_tb <= '0';
           fw_tb <= (N-1 downto 4 => '0') & "1000";
-          phase_tb <= (N-1 downto 3 => '0') & "100";
+          phase_tb <= (N-1 downto 2 => '0') & "00"; --0 gradi
           amplitude_tb <= "0001";
 
         when MSM_cycles * 9 =>
           fw_tb <= (N-1 downto 4 => '0') & "1000";
-          phase_tb <= (N-1 downto 5 => '0') & "10000";
+          phase_tb <= (N-1 downto 2 => '0') & "01"; --90 gradi
           amplitude_tb <= "0001";
 
         when MSM_cycles * 10 =>
           fw_tb <= (N-1 downto 4 => '0') & "1000";
-          phase_tb <= (N-1 downto 7 => '0') & "1000000";
+          phase_tb <= (N-1 downto 2 => '0') & "10"; --180 gradi
           amplitude_tb <= "0001";
 
         when MSM_cycles * 11 =>
           fw_tb <= (N-1 downto 4 => '0') & "1000";
-          phase_tb <= (N-1 downto 9 => '0') & "100000000";
+          phase_tb <= (N-1 downto 2 => '0') & "11"; --270 gradi
           amplitude_tb <= "0001";
 
         when MSM_cycles * 12 =>
           fw_tb <= (N-1 downto 4 => '0') & "1000";
-          phase_tb <= (N-1 downto 11 => '0') & "10000000000";
+          phase_tb <= (N-1 downto 2 => '0') & "00"; --0 gradi
           amplitude_tb <= "0001";
 
         when MSM_cycles * 13 =>
@@ -135,7 +135,7 @@ begin
 
         when MSM_cycles * 17 =>
           fw_tb <= (N-1 downto 4 => '0') & "1000";
-          phase_tb <= (N-1 downto 4 => '0') & "1000";
+          phase_tb <= (N-1 downto 2 => '0') & "00";
           amplitude_tb <= "1000";
 
         when MSM_cycles * 18 =>

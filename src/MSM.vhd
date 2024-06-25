@@ -29,7 +29,7 @@ architecture behavior of MSM is
   -- Output of of the phase accumulator counter
   signal counter_out : std_logic_vector(N-1 downto 0);
 
-  signal adder_out : std_logic_vector(N-1 downto 0);
+  signal phase_out : std_logic_vector(N-1 downto 0);
 
   -- Output of the LUT table
   signal lut_output : std_logic_vector(P-1 downto 0);
@@ -60,12 +60,12 @@ component Counter is
   );
 end component;
 
-component Adder is
+component Phase_Adder is
   generic ( N : natural := N );
   port (
-    a : in  std_logic_vector(N-1 downto 0);
-    b : in  std_logic_vector(N-1 downto 0);
-    adder_out  : out std_logic_vector(N-1 downto 0)
+    freq    : in std_logic_vector(N-1 downto 0);  
+    phase   : in std_logic_vector(N-1 downto 0);   
+    freq_out: out std_logic_vector(N-1 downto 0)  
   );
 end component;
 
@@ -99,18 +99,18 @@ begin
       cntr_out  => counter_out
     );
 
-  PHASE_ADDER: Adder
+    PHASE_ADDER_N: Phase_Adder
     generic map (N => N)
     port map(
-      a         => counter_out,
-      b         => phase,
-      adder_out => adder_out
+      freq     => counter_out,
+      phase    => phase,
+      freq_out => phase_out
     );
 
   LUT_65536 : lut_table_65536_7bit
     generic map (N => N, P => P)
     port map(
-      address  => adder_out,
+      address  => phase_out,
       lut_out => lut_output
     );
 
