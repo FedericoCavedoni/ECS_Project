@@ -97,7 +97,7 @@ Ecounter
 Z22 w1719336125
 R1
 R2
-!i122 438
+!i122 465
 R3
 Z23 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Counter.vhd
 Z24 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Counter.vhd
@@ -107,9 +107,9 @@ VlDe^XOK1[]d9?2FLOnYbA0
 !s100 T3al1VgnTbOhi[dc[<H<U0
 R6
 32
-Z25 !s110 1719342878
+Z25 !s110 1719345005
 !i10b 1
-Z26 !s108 1719342878.000000
+Z26 !s108 1719345005.000000
 Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Counter.vhd|
 Z28 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Counter.vhd|
 !i113 1
@@ -119,7 +119,7 @@ Astruct
 R1
 R2
 DEx4 work 7 counter 0 22 lDe^XOK1[]d9?2FLOnYbA0
-!i122 438
+!i122 465
 l58
 L18 66
 VPhi:a0IZ;R0FN26DfE@_K2
@@ -181,7 +181,7 @@ Edff_n
 Z37 w1719047070
 R1
 R2
-!i122 439
+!i122 466
 R3
 Z38 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd
 Z39 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd
@@ -191,11 +191,11 @@ VbgdlQGDOf>Dh;Mi=@Z>An0
 !s100 eO@zFk`QPn4?5DQhFO[2k0
 R6
 32
-Z40 !s110 1719342879
+R25
 !i10b 1
 R26
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
-Z42 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
+Z41 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/DFF_N.vhd|
 !i113 1
 R11
 R12
@@ -203,30 +203,30 @@ Astruct
 R1
 R2
 DEx4 work 5 dff_n 0 22 bgdlQGDOf>Dh;Mi=@Z>An0
-!i122 439
+!i122 466
 l18
 L17 14
 V87`d_DOLL]5<aF[>28e5L1
 !s100 75do]WfmEi:P=Vl<bMoYM2
 R6
 32
-R40
+R25
 !i10b 1
 R26
+R40
 R41
-R42
 !i113 1
 R11
 R12
 Elut_table_16384_7bit
-Z43 w1719244137
+Z42 w1719244137
 R14
 R1
 R2
 !i122 392
 R3
-Z44 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd
-Z45 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd
+Z43 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd
+Z44 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd
 l0
 L5 1
 V?RXX3O5BJ`zPJai5n=2PH1
@@ -235,9 +235,9 @@ R6
 32
 !s110 1719339928
 !i10b 1
-Z46 !s108 1719339928.000000
-Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd|
-Z48 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd|
+Z45 !s108 1719339928.000000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd|
+Z47 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_16384_7bit.vhd|
 !i113 1
 R11
 R12
@@ -245,7 +245,7 @@ Abehavior
 R14
 R1
 R2
-Z49 DEx4 work 20 lut_table_16384_7bit 0 22 ?RXX3O5BJ`zPJai5n=2PH1
+Z48 DEx4 work 20 lut_table_16384_7bit 0 22 ?RXX3O5BJ`zPJai5n=2PH1
 !i122 392
 R35
 R36
@@ -255,9 +255,9 @@ R6
 32
 !s110 1719339929
 !i10b 1
+R45
 R46
 R47
-R48
 !i113 1
 R11
 R12
@@ -265,7 +265,7 @@ Artl
 R14
 R1
 R2
-R49
+R48
 !i122 99
 R35
 R36
@@ -276,32 +276,32 @@ R6
 !s110 1719243696
 !i10b 1
 !s108 1719243696.000000
+R46
 R47
-R48
 !i113 1
 R11
 R12
 w1719243353
 Elut_table_65536_7bit
-Z50 w1719051650
+Z49 w1719051650
 R14
 R1
 R2
-!i122 444
+!i122 471
 R3
-Z51 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd
-Z52 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd
+Z50 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd
+Z51 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd
 l0
 L5 1
 Ve@PPdge<PmU>2^aJB?9ch0
 !s100 1NRkj97zUd8P5YJMCbQBh0
 R6
 32
-!s110 1719342880
+!s110 1719345006
 !i10b 1
-Z53 !s108 1719342879.000000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd|
-Z55 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd|
+Z52 !s108 1719345006.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd|
+Z54 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/lut_table_65536_7bit.vhd|
 !i113 1
 R11
 R12
@@ -310,41 +310,41 @@ R14
 R1
 R2
 DEx4 work 20 lut_table_65536_7bit 0 22 e@PPdge<PmU>2^aJB?9ch0
-!i122 444
+!i122 471
 l65558
 L16 65545
 VoZ6GlL>8fl;47ToiTRREl2
 !s100 S2dGVoHd3BGdad@cbXYnf2
 R6
 32
-!s110 1719342920
+!s110 1719345041
 !i10b 1
+R52
 R53
 R54
-R55
 !i113 1
 R11
 R12
 Emsm
-Z56 w1719342755
+Z55 w1719344127
 R14
 R1
 R2
-!i122 445
+!i122 472
 R3
-Z57 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd
-Z58 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd
+Z56 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd
+Z57 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd
 l0
 L5 1
 V7VcX@W7c5zbmM8IIcbmP[3
 !s100 DRGL]dTJPS8Zd7h6TPgZN2
 R6
 32
-Z59 !s110 1719342921
+Z58 !s110 1719345042
 !i10b 1
-Z60 !s108 1719342920.000000
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd|
-Z62 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd|
+Z59 !s108 1719345041.000000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd|
+Z61 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/MSM.vhd|
 !i113 1
 R11
 R12
@@ -352,19 +352,19 @@ Abehavior
 R14
 R1
 R2
-Z63 DEx4 work 3 msm 0 22 7VcX@W7c5zbmM8IIcbmP[3
-!i122 445
+Z62 DEx4 work 3 msm 0 22 7VcX@W7c5zbmM8IIcbmP[3
+!i122 472
 l89
 L24 117
 VL[h:AOD2`:R`493J?BbQB1
 !s100 8IUX_Dend>HQSV]=L]^cR2
 R6
 32
-R59
+R58
 !i10b 1
+R59
 R60
 R61
-R62
 !i113 1
 R11
 R12
@@ -372,7 +372,7 @@ Astruct
 R14
 R1
 R2
-R63
+R62
 !i122 41
 l97
 L24 133
@@ -383,32 +383,32 @@ R6
 !s110 1719063781
 !i10b 1
 !s108 1719063781.000000
+R60
 R61
-R62
 !i113 1
 R11
 R12
 w1719061227
 Emsm_tb
-Z64 w1719341663
+Z63 w1719344988
 R14
 R1
 R2
-!i122 443
+!i122 470
 R3
-Z65 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd
-Z66 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd
+Z64 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd
+Z65 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd
 l0
 L5 1
 V]z2kPeif0d1lod4]KDG3>1
 !s100 l^GOU24gOd531dNg7U;D13
 R6
 32
-R40
+R25
 !i10b 1
-R53
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd|
-Z68 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd|
+R26
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd|
+Z67 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/tb/MSM_tb.vhd|
 !i113 1
 R11
 R12
@@ -417,40 +417,40 @@ R14
 R1
 R2
 DEx4 work 6 msm_tb 0 22 ]z2kPeif0d1lod4]KDG3>1
-!i122 443
+!i122 470
 l38
-L8 145
-VkReW4PYNTDhf5T[bhQacH1
-!s100 WhLDH_TLISAge9BKMeG8?2
+L8 154
+VI@j?NYk8>`:6a5DHijXLF3
+!s100 ]J0PD2jP9Z`O6?kI9QTYO3
 R6
 32
-R40
+R25
 !i10b 1
-R53
+R26
+R66
 R67
-R68
 !i113 1
 R11
 R12
 Emultiplier
-Z69 w1719338764
+Z68 w1719338764
 R1
 R2
-!i122 440
+!i122 467
 R3
-Z70 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd
-Z71 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd
+Z69 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd
+Z70 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd
 l0
 L4 1
 V?:[]8Qd:52I5:DE:KF6PK1
 !s100 >g@CM8[J[<VoABMNAfg553
 R6
 32
-R40
+R25
 !i10b 1
-R53
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd|
-Z73 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd|
+R26
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd|
+Z72 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Multiplier.vhd|
 !i113 1
 R11
 R12
@@ -458,41 +458,41 @@ Abehavior
 R1
 R2
 DEx4 work 10 multiplier 0 22 ?:[]8Qd:52I5:DE:KF6PK1
-!i122 440
+!i122 467
 l39
-Z74 L16 37
+Z73 L16 37
 VASIH;JfbN=XWBEGaOJ68G0
 !s100 `S^nA;ocZ7Ij3VmFHV]2O1
 R6
 32
-R40
+R25
 !i10b 1
-R53
+R26
+R71
 R72
-R73
 !i113 1
 R11
 R12
 Emultiplier_nxn
-Z75 w1719307950
+Z74 w1719307950
 R14
 R1
 R2
-!i122 441
+!i122 468
 R3
-Z76 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd
-Z77 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd
+Z75 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd
+Z76 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd
 l0
 L5 1
 VZF9dMgnMXA1NQX96eHLcc2
 !s100 f8XcOANVb8mJa<L8[ZnX`0
 R6
 32
-R40
+R25
 !i10b 1
-R53
-Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd|
-Z79 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd|
+R26
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd|
+Z78 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/multiplier_NxN.vhd|
 !i113 1
 R11
 R12
@@ -501,41 +501,41 @@ R14
 R1
 R2
 DEx4 work 14 multiplier_nxn 0 22 ZF9dMgnMXA1NQX96eHLcc2
-!i122 441
+!i122 468
 l19
 R21
 VIclQXI]X85Wgi6G7]j<fB2
 !s100 >E@KBiS7fI@b5WGkO`<1P1
 R6
 32
-R40
+R25
 !i10b 1
-R53
+R26
+R77
 R78
-R79
 !i113 1
 R11
 R12
 Ephase_adder
-Z80 w1719342522
+Z79 w1719344267
 R14
 R1
 R2
-!i122 446
+!i122 473
 R3
-Z81 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd
-Z82 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd
+Z80 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd
+Z81 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd
 l0
 L5 1
 V=MJH9XJ7QJY>cWgH;3=4^1
 !s100 V_feLiVRi[7UCC^WMkZM32
 R6
 32
-R59
+R58
 !i10b 1
-Z83 !s108 1719342921.000000
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd|
-Z85 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd|
+Z82 !s108 1719345042.000000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd|
+Z84 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/Phase_Adder.vhd|
 !i113 1
 R11
 R12
@@ -543,41 +543,41 @@ Abehavior
 R14
 R1
 R2
-Z86 DEx4 work 11 phase_adder 0 22 =MJH9XJ7QJY>cWgH;3=4^1
-!i122 446
+Z85 DEx4 work 11 phase_adder 0 22 =MJH9XJ7QJY>cWgH;3=4^1
+!i122 473
 l17
-R74
-Z87 V8fBSoaK[<8;<gT?k`KS?[2
-Z88 !s100 g=09A6<fC`eg;gNPDWao>0
+R73
+Z86 V;UXIz=?:Kl@5Mo<hKkY_R1
+Z87 !s100 bGajgS:ag;oU^5[2l5NeL0
 R6
 32
-R59
+R58
 !i10b 1
+R82
 R83
 R84
-R85
 !i113 1
 R11
 R12
 Eripple_carry_adder
-Z89 w1719047076
+Z88 w1719047076
 R1
 R2
-!i122 442
+!i122 469
 R3
-Z90 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
-Z91 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
+Z89 8C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
+Z90 FC:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd
 l0
 L4 1
 V1J<eGQc>8@S1OnD^T=O]91
 !s100 ZIM<CD?^g77`Y=I6X0Xmf0
 R6
 32
-R40
+R25
 !i10b 1
-R53
-Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
-Z93 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
+R26
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
+Z92 !s107 C:/Users/fedec/OneDrive/Desktop/Electronics and Communications Systems/Progetto/ECS_Project/src/ripple_carry_adder.vhd|
 !i113 1
 R11
 R12
@@ -585,18 +585,18 @@ Abeh
 R1
 R2
 DEx4 work 18 ripple_carry_adder 0 22 1J<eGQc>8@S1OnD^T=O]91
-!i122 442
+!i122 469
 l18
 L17 15
 V=`Vlg;]1X[E[aB2O[KNmW3
 !s100 ogFd[Xg9B7QUo<deBiBLf0
 R6
 32
-R40
+R25
 !i10b 1
-R53
+R26
+R91
 R92
-R93
 !i113 1
 R11
 R12

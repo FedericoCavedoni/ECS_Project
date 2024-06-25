@@ -1403,3 +1403,98 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N
+# Compile of Counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# Compile of Phase_Adder.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.msm_tb(testbench)
+# Loading work.msm(behavior)
+# Loading work.counter(struct)
+# Loading work.ripple_carry_adder(beh)
+# Loading work.dff_n(struct)
+# Loading work.phase_adder(behavior)
+# Loading work.lut_table_65536_7bit(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.multiplier_nxn(behavior)
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/msm_tb/fw_tb \
+sim:/msm_tb/phase_tb \
+sim:/msm_tb/amplitude_tb \
+sim:/msm_tb/msm_out_tb
+# Compile of Counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# Compile of Phase_Adder.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.msm_tb(testbench)
+# Loading work.msm(behavior)
+# Loading work.counter(struct)
+# Loading work.ripple_carry_adder(beh)
+# Loading work.dff_n(struct)
+# Loading work.phase_adder(behavior)
+# Loading work.lut_table_65536_7bit(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.multiplier_nxn(behavior)
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N
+# Compile of Counter.vhd was successful.
+# Compile of DFF_N.vhd was successful.
+# Compile of Multiplier.vhd was successful.
+# Compile of multiplier_NxN.vhd was successful.
+# Compile of ripple_carry_adder.vhd was successful.
+# Compile of MSM_tb.vhd was successful.
+# Compile of lut_table_65536_7bit.vhd was successful.
+# Compile of MSM.vhd was successful.
+# Compile of Phase_Adder.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.msm_tb(testbench)
+# Loading work.msm(behavior)
+# Loading work.counter(struct)
+# Loading work.ripple_carry_adder(beh)
+# Loading work.dff_n(struct)
+# Loading work.phase_adder(behavior)
+# Loading work.lut_table_65536_7bit(behavior)
+# Loading work.multiplier(behavior)
+# Loading work.multiplier_nxn(behavior)
+run -all
+# GetModuleFileName: Impossibile trovare il modulo specificato.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/LUT_65536
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /msm_tb/DUT/PHASE_ADDER_N

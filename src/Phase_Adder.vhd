@@ -29,11 +29,11 @@ begin
       when "00" =>
         phase_shift := 0;    -- 0 degrees
       when "01" =>
-        phase_shift := N/4;  -- 90 degrees
+        phase_shift := (2**N)/4;  -- 90 degrees
       when "10" =>
-        phase_shift := N/2;  -- 180 degrees
+        phase_shift := (2**N)/2;  -- 180 degrees
       when "11" =>
-        phase_shift := 3*N/4;-- 270 degrees
+        phase_shift := 3*(2**N)/4;-- 270 degrees
       when others =>
         phase_shift := 0;    -- Default to 0 degrees if unexpected input
     end case;
