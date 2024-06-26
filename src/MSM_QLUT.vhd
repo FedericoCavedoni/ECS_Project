@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity MSM is
+entity MSM_QLUT is
   generic (
     N : natural := 16;
     A : natural := 4;
@@ -21,7 +21,7 @@ entity MSM is
   );
 end entity;
 
-architecture behavior of MSM is
+architecture behavior of MSM_QLUT is
 -------------------------------------------------------------------------------------
 -- Internal signals
 -------------------------------------------------------------------------------------
@@ -29,14 +29,8 @@ architecture behavior of MSM is
   -- Output of of the phase accumulator counter
   signal counter_out : std_logic_vector(N-1 downto 0);
 
-  signal adder_out : std_logic_vector(N-1 downto 0);
-
-  signal lut_address : std_logic_vector(N-3 downto 0);
-
   -- Output of the LUT table
   signal lut_output : std_logic_vector(P-1 downto 0);
-
-  signal lut_output_muxed : std_logic_vector(P-1 downto 0);
 
   signal amp_ext : std_logic_vector(P-1 downto 0);
 
@@ -46,6 +40,12 @@ architecture behavior of MSM is
 
   -- Output register for the output synchronization
   signal output_reg : std_logic_vector(O-1 downto 0);
+  
+  signal signal_out : std_logic_vector(N-1 downto 0);
+
+  signal lut_address : std_logic_vector(N-3 downto 0);
+
+  signal lut_output_muxed : std_logic_vector(P-1 downto 0);
 
 
 -------------------------------------------------------------------------------------
@@ -64,12 +64,12 @@ component Counter is
   );
 end component;
 
-component Adder is
+component Phase_Adder is
   generic ( N : natural := N );
   port (
-    a : in  std_logic_vector(N-1 downto 0);
-    b : in  std_logic_vector(N-1 downto 0);
-    adder_out  : out std_logic_vector(N-1 downto 0)
+    signal_in : in  STD_LOGIC_VECTOR (N-1 downto 0); 
+    phase_in  : in  STD_LOGIC_VECTOR (N-1 downto 0); 
+    signal_out : out STD_LOGIC_VECTOR (N-1 downto 0) 
   );
 end component;
 
@@ -103,38 +103,38 @@ begin
       cntr_out  => counter_out
     );
 
-  PHASE_ADDER: Adder
+  PHASE_ADDER_N: Phase_Adder
     generic map (N => N)
     port map(
-      a         => counter_out,
-      b         => phase,
-      adder_out => adder_out
+      signal_in     => counter_out,
+      phase_in    => phase,
+      signal_out => signal_out
     );
 
-    lut_address <= adder_out(N-3 downto 0) when (adder_out(N-2) = '0') else not(adder_out(N-3 downto 0) );
+    lut_address <= signal_out(N-3 downto 0) when (signal_out(N-2) = '0') else not(signal_out(N-3 downto 0));
 
-    LUT_16384 : lut_table_16384_7bit
-      generic map (N => N-2, P => P)
+  LUT_16384 : lut_table_16384_7bit
+    generic map (N => N-2, P => P)
+    port map(
+      address  => lut_address,
+      lut_out => lut_output
+    );
+
+    lut_output_muxed <= lut_output when (signal_out(N-1) = '0') else not(lut_output);
+
+    amp_ext <= (P-1 downto A => '0') & amplitude;
+
+    MULTIPLIER_N: Multiplier
+      generic map (N => P)
       port map(
-        address  => lut_address,
-        lut_out => lut_output
+        a         => amp_ext,
+        b         => lut_output_muxed,
+        mul_out   => multiplier_output
       );
-  
-    lut_output_muxed <= lut_output when (adder_out(N-1) = '0') else not(lut_output);
-  
-      amp_ext <= (P-1 downto A => '0') & amplitude;
-  
-      MULTIPLIER_N: Multiplier
-        generic map (N => P)
-        port map(
-          a         => amp_ext,
-          b         => lut_output_muxed,
-          mul_out   => multiplier_output
-        );
-  
-    mul_ext <= (O-1 downto 2*P => multiplier_output(2*P-1)) & multiplier_output;
 
-  MSM_OUTPUT_REG: process(clk, reset)
+  mul_ext <= (O-1 downto 2*P => multiplier_output(2*P-1)) & multiplier_output;
+
+  MSM_QLUT_OUTPUT_REG: process(clk, reset)
   begin
     if (reset = '1') then
       output_reg <= (others => '0');
@@ -146,6 +146,5 @@ begin
   yq <= output_reg;
 
 end architecture;
-
 
   
