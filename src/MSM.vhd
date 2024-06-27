@@ -77,7 +77,7 @@ component lut_table_65536_7bit is
     );
   end component;
 
-component Multiplier is
+component Amplitude_Multiplier is
   generic ( N : natural := P );
   port (
     a : in  std_logic_vector(N-1 downto 0);
@@ -116,7 +116,7 @@ begin
 
     amp_ext <= (P-1 downto A => '0') & amplitude;
 
-    MULTIPLIER_N: Multiplier
+    MULTIPLIER_N: Amplitude_Multiplier
       generic map (N => P)
       port map(
         a         => amp_ext,

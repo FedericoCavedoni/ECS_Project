@@ -74,7 +74,7 @@ component Phase_Adder is
   );
 end component;
 
-component lut_table_16384_7bit is
+component qlut_table_16384_7bit is
   generic ( N : natural := N-2; P : natural := P );
   port (
     address  : in std_logic_vector(N-1 downto 0);
@@ -82,7 +82,7 @@ component lut_table_16384_7bit is
     );
   end component;
 
-component Multiplier is
+component Amplitude_Multiplier is
   generic ( N : natural := P );
   port (
     a : in  std_logic_vector(N-1 downto 0);
@@ -114,7 +114,7 @@ begin
 
   lut_address <= signal_out(N-3 downto 0) when (signal_out(N-2) = '0') else not(signal_out(N-3 downto 0));
 
-  LUT_16384 : lut_table_16384_7bit
+  LUT_16384 : qlut_table_16384_7bit
     generic map (N => N-2, P => P)
     port map(
       address  => lut_address,
@@ -125,7 +125,7 @@ begin
 
     amp_ext <= (P-1 downto A => '0') & amplitude;
 
-    MULTIPLIER_N: Multiplier
+    MULTIPLIER_N: Amplitude_Multiplier
       generic map (N => P)
       port map(
         a         => amp_ext,
