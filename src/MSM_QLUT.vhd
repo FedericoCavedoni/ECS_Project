@@ -74,7 +74,7 @@ component Phase_Adder is
   );
 end component;
 
-component qlut_table_16384_7bit is
+component  is
   generic ( N : natural := N-2; P : natural := P );
   port (
     address  : in std_logic_vector(N-1 downto 0);
