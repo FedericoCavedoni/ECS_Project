@@ -112,7 +112,7 @@ begin
       signal_out => signal_out
     );
 
-  lut_address <= signal_out(N-3 downto 0) when signal_out(N-2) = '0' else not(signal_out(N-3 downto 0));
+  lut_address <= signal_out(N-3 downto 0) when (signal_out(N-2) = '0') else not(signal_out(N-3 downto 0));
 
   LUT_16384 : lut_table_16384_7bit
     generic map (N => N-2, P => P)
@@ -121,7 +121,7 @@ begin
       lut_out => lut_output
     );
 
-    lut_output_mux <= lut_output when signal_out(N-1) = '0' else not(lut_output);
+    lut_output_mux <= lut_output when (signal_out(N-1) = '0') else not(lut_output);
 
     amp_ext <= (P-1 downto A => '0') & amplitude;
 
