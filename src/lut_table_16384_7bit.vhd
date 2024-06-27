@@ -13,7 +13,7 @@ entity lut_table_16384_7bit is
   );
 end entity;
 
-architecture behavior of lut_table_16384_7bit is
+architecture rtl of lut_table_16384_7bit is
 
   type LUT_t is array (natural range 0 to 16383) of integer;
   constant LUT: LUT_t := (

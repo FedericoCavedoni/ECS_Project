@@ -2,10 +2,10 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity MSM_tb is
+entity MSM_qlut_tb is
 end entity;
 
-architecture testbench of MSM_tb is
+architecture testbench of MSM_qlut_tb is
 
   constant N : integer := 16;
   constant P : integer := 7;

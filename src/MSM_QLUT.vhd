@@ -7,7 +7,8 @@ entity MSM_QLUT is
     N : natural := 16;
     A : natural := 4;
     P : natural := 7;
-    O : natural := 16
+    O : natural := 16;
+    M : natural := 14
   );
   port(
     clk   : in std_logic;  -- clock of the system
@@ -43,9 +44,9 @@ architecture behavior of MSM_QLUT is
   
   signal signal_out : std_logic_vector(N-1 downto 0);
 
-  signal lut_address : std_logic_vector(N-3 downto 0);
+  signal lut_address : std_logic_vector(M-1 downto 0);
 
-  signal lut_output_muxed : std_logic_vector(P-1 downto 0);
+  signal lut_output_mux : std_logic_vector(P-1 downto 0);
 
 
 -------------------------------------------------------------------------------------
@@ -111,7 +112,7 @@ begin
       signal_out => signal_out
     );
 
-    lut_address <= signal_out(N-3 downto 0) when (signal_out(N-2) = '0') else not(signal_out(N-3 downto 0));
+  lut_address <= signal_out(N-3 downto 0) when signal_out(N-2) = '0' else not(signal_out(N-3 downto 0));
 
   LUT_16384 : lut_table_16384_7bit
     generic map (N => N-2, P => P)
@@ -120,7 +121,7 @@ begin
       lut_out => lut_output
     );
 
-    lut_output_muxed <= lut_output when (signal_out(N-1) = '0') else not(lut_output);
+    lut_output_mux <= lut_output when signal_out(N-1) = '0' else not(lut_output);
 
     amp_ext <= (P-1 downto A => '0') & amplitude;
 
@@ -128,7 +129,7 @@ begin
       generic map (N => P)
       port map(
         a         => amp_ext,
-        b         => lut_output_muxed,
+        b         => lut_output_mux,
         mul_out   => multiplier_output
       );
 
@@ -146,5 +147,3 @@ begin
   yq <= output_reg;
 
 end architecture;
-
-  
