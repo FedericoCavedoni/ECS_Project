@@ -68,13 +68,16 @@ end component;
 component Phase_Adder is
   generic ( N : natural := N );
   port (
+    clk     : in  std_logic;
+    a_rst_h : in  std_logic;
+
     signal_in : in  STD_LOGIC_VECTOR (N-1 downto 0); 
     phase_in  : in  STD_LOGIC_VECTOR (N-1 downto 0); 
     signal_out : out STD_LOGIC_VECTOR (N-1 downto 0) 
   );
 end component;
 
-component  is
+component qlut_table_16384_7bit is
   generic ( N : natural := N-2; P : natural := P );
   port (
     address  : in std_logic_vector(N-1 downto 0);
@@ -85,6 +88,9 @@ component  is
 component Amplitude_Multiplier is
   generic ( N : natural := P );
   port (
+    clk     : in  std_logic;
+    a_rst_h : in  std_logic;
+
     a : in  std_logic_vector(N-1 downto 0);
     b : in  std_logic_vector(N-1 downto 0);
     mul_out  : out std_logic_vector(2*N-1 downto 0)
@@ -107,6 +113,9 @@ begin
   PHASE_ADDER_N: Phase_Adder
     generic map (N => N)
     port map(
+      clk     => clk,
+      a_rst_h => reset,
+
       signal_in     => counter_out,
       phase_in    => phase,
       signal_out => signal_out
@@ -128,6 +137,9 @@ begin
     MULTIPLIER_N: Amplitude_Multiplier
       generic map (N => P)
       port map(
+        clk     => clk,
+        a_rst_h => reset,
+
         a         => amp_ext,
         b         => lut_output_mux,
         mul_out   => multiplier_output

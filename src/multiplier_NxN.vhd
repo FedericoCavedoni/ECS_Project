@@ -17,7 +17,7 @@ architecture behavior of multiplier_NxN is
     signal signed_A, signed_B : signed(N-1 downto 0); -- Signed versions of A and B
     signal temp_result : signed(2*N-1 downto 0); -- Temporary result for multiplication
 begin
-    process (A, B)
+    process (A, B, signed_A, signed_B, temp_result)
     begin
         -- Convert inputs to signed
         signed_A <= signed(A);
