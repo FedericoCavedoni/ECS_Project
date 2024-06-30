@@ -1,21 +1,26 @@
 library IEEE;
-  use IEEE.std_logic_1164.all;
-  use IEEE.numeric_std.all;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
+-- Entity declaration for lut_table_65536_7bit
 entity lut_table_65536_7bit is
   generic (
-    N : integer := 16;
-    P : integer := 7
+    N : integer := 16;  -- Generic parameter defining the bit-width of the address
+    P : integer := 7    -- Generic parameter defining the bit-width of the output
   );
   port (
-    address  : in  std_logic_vector(N-1 downto 0);
-    lut_out : out std_logic_vector(P-1 downto 0)
+    address : in  std_logic_vector(N-1 downto 0);  -- Input address
+    lut_out : out std_logic_vector(P-1 downto 0)   -- Output from the lookup table
   );
 end entity;
 
+-- Architecture body for lut_table_65536_7bit
 architecture behavior of lut_table_65536_7bit is
 
+  -- Type declaration for the lookup table (LUT) as an array of integers
   type LUT_t is array (natural range 0 to 65535) of integer;
+  
+  -- Constant definition for the LUT
   constant LUT: LUT_t := (
     0 => 0,
     1 => 0,
@@ -65555,6 +65560,9 @@ architecture behavior of lut_table_65536_7bit is
     65535 => 0
   );
 
-begin
-  lut_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),P));
-end architecture;
+  begin
+    -- Process the address to fetch data from the LUT
+    -- Convert 'address' to an integer, access the corresponding LUT entry, and convert it to std_logic_vector
+    lut_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))), P));
+  
+  end architecture;

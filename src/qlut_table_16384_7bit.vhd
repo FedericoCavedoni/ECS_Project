@@ -1,21 +1,22 @@
 library IEEE;
-  use IEEE.std_logic_1164.all;
-  use IEEE.numeric_std.all;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
 
 entity qlut_table_16384_7bit is
   generic (
-    N : integer := 14;
-    P : integer := 7
+    N : integer := 14;   -- Address width (log2 of 16384)
+    P : integer := 7     -- Output width
   );
   port (
-    address  : in  std_logic_vector(N-1 downto 0);
-    lut_out : out std_logic_vector(P-1 downto 0)
+    address  : in  std_logic_vector(N-1 downto 0);  -- Address input
+    lut_out  : out std_logic_vector(P-1 downto 0)   -- Output data
   );
 end entity;
 
 architecture rtl of qlut_table_16384_7bit is
-
+  -- Type declaration for LUT
   type LUT_t is array (natural range 0 to 16383) of integer;
+  -- LUT initialization with data
   constant LUT: LUT_t := (
     0 => 0,
     1 => 0,
@@ -16403,6 +16404,7 @@ architecture rtl of qlut_table_16384_7bit is
     16383 => 63
   );
 
-begin
-  lut_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))),P));
-end architecture;
+  begin
+    -- Process to output LUT data based on address input
+    lut_out <= std_logic_vector(to_signed(LUT(to_integer(unsigned(address))), P));
+  end architecture;
